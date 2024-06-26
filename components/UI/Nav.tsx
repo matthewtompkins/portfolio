@@ -11,7 +11,7 @@ const Nav: React.FC = (): JSX.Element => {
           <li className={liStyles}>My Work</li>
           <li className={liStyles}>Testimonials</li>
           <li>
-            <Button title="Contact ME" url="/contact-me" theme="outline" />
+            <Button title="Contact Me" url="/contact-me" theme="outline" />
           </li>
         </ul>
       </div>

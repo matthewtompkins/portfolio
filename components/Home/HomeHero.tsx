@@ -2,12 +2,14 @@ import Grid from '../Grid/Grid';
 import Image from 'next/image';
 import Button from '../UI/Button';
 import profile from '@/public/images/placeholder.jpg';
+import { getSectionThemeColors } from '@/utilities/getSectionThemeColors';
 
 const HomeHero: React.FC = (): JSX.Element => {
+  const colors = getSectionThemeColors('black');
   return (
-    <div className="bg-black py-36">
+    <div className={`${colors.bgColor} py-36`}>
       <Grid>
-        <div className="col-start-2 col-span-6 text-green">
+        <div className={`col-start-2 col-span-6 ${colors.textColor}`}>
           <h1 className="font-serif text-xl leading-none mb-8">
             Matt Tompkins
           </h1>
