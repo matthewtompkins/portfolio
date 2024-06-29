@@ -1,3 +1,5 @@
+'use client';
+
 import {
   CarouselProvider,
   Slider,
@@ -7,12 +9,12 @@ import {
 
 import Testimonial from './Testimonial';
 
-import 'node_modules/pure-react-carousel/dist/react-carousel.es.css';
+import '@/node_modules/pure-react-carousel/dist/react-carousel.es.css';
 
 interface TestimonialSliderProps {
   testimonials: MT.TestimonialProps[];
   textColor: MT.TextColorClasses;
-  uiColor: MT.BackgroundColorClasses;
+  uiColor: MT.ThemeColors;
 }
 
 const TestimonialSlider: React.FC<TestimonialSliderProps> = ({
@@ -47,17 +49,22 @@ export default TestimonialSlider;
 
 interface CarouselPaginationProps {
   length: number;
-  uiColor: MT.BackgroundColorClasses;
+  uiColor: MT.ThemeColors;
 }
 
 const CarouselPagination = ({ length, uiColor }: CarouselPaginationProps) => {
+  const dotColors = {
+    green: 'disabled:bg-green border-green',
+    black: 'disabled:bg-black border-black',
+    white: 'disabled:bg-white border-white'
+  };
   const dots = [];
   for (let i = 0; i < length; i++) {
     dots.push(
       <Dot
         slide={i}
         key={i}
-        className={`h-[12px] w-[12px] border-2 rounded-full mx-[2px] ${uiColor} disabled:bg-transparent`}
+        className={`h-8 w-8 border-2 rounded-full mx-2 ${dotColors[uiColor]} bg-transparent`}
       ></Dot>
     );
   }
