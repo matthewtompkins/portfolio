@@ -1,7 +1,8 @@
-import TestimonialSlider from '../Testimonials/TestimonialSlider';
+import CarouselSlider from '../Slider/CarouselSlider';
+import Testimonial from '../Testimonials/Testimonial';
 import Grid from '../Grid/Grid';
 
-const HomeTestimonialSlider = () => {
+const HomeTestimonialSlider = (): JSX.Element => {
   const testimonialData: MT.TestimonialProps[] = [
     {
       author: 'Mindy P.',
@@ -20,13 +21,14 @@ const HomeTestimonialSlider = () => {
     },
   ];
 
+  const testimonials = testimonialData.map((cur, ind) => <Testimonial color="text-green" key={ind} testimonial={cur} />);
+
   return (
     <div className="bg-black py-32">
       <Grid>
         <div className="col-start-3 col-span-8">
-          <TestimonialSlider
-            testimonials={testimonialData}
-            textColor="text-green"
+          <CarouselSlider
+            els={testimonials}
             uiColor="green"
           />
         </div>

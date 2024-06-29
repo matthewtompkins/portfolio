@@ -1,30 +1,21 @@
 'use client';
 
-import {
-  CarouselProvider,
-  Slider,
-  Slide,
-  Dot,
-} from 'pure-react-carousel';
-
-import Testimonial from './Testimonial';
+import { CarouselProvider, Slider, Slide, Dot } from 'pure-react-carousel';
 
 import '@/node_modules/pure-react-carousel/dist/react-carousel.es.css';
 
 interface TestimonialSliderProps {
-  testimonials: MT.TestimonialProps[];
-  textColor: MT.TextColorClasses;
+  els: JSX.Element[];
   uiColor: MT.ThemeColors;
 }
 
-const TestimonialSlider: React.FC<TestimonialSliderProps> = ({
-  testimonials,
-  textColor,
+const CarouselSlider: React.FC<TestimonialSliderProps> = ({
+  els,
   uiColor,
 }) => {
-  const testimonialEls = testimonials.map((testimonial, index) => (
+  const elSlides = els.map((el, index) => (
     <Slide className="mx-[4px]" index={index} key={index}>
-      <Testimonial color={textColor} testimonial={testimonial} />
+      {el}
     </Slide>
   ));
 
@@ -35,17 +26,17 @@ const TestimonialSlider: React.FC<TestimonialSliderProps> = ({
         naturalSlideHeight={0}
         naturalSlideWidth={320}
         isIntrinsicHeight
-        totalSlides={testimonials.length}
+        totalSlides={els.length}
         touchEnabled
       >
-        <Slider>{testimonialEls}</Slider>
-        <CarouselPagination length={testimonials.length} uiColor={uiColor} />
+        <Slider>{elSlides}</Slider>
+        <CarouselPagination length={els.length} uiColor={uiColor} />
       </CarouselProvider>
     </div>
   );
 };
 
-export default TestimonialSlider;
+export default CarouselSlider;
 
 interface CarouselPaginationProps {
   length: number;
@@ -56,7 +47,7 @@ const CarouselPagination = ({ length, uiColor }: CarouselPaginationProps) => {
   const dotColors = {
     green: 'disabled:bg-green border-green',
     black: 'disabled:bg-black border-black',
-    white: 'disabled:bg-white border-white'
+    white: 'disabled:bg-white border-white',
   };
   const dots = [];
   for (let i = 0; i < length; i++) {
@@ -64,17 +55,15 @@ const CarouselPagination = ({ length, uiColor }: CarouselPaginationProps) => {
       <Dot
         slide={i}
         key={i}
-        className={`h-8 w-8 border-2 rounded-full mx-2 ${dotColors[uiColor]} bg-transparent`}
+        className={`h-8 w-8 border-2 rounded-full mx-2 mt-8 ${dotColors[uiColor]} bg-transparent`}
       ></Dot>
     );
   }
   return (
     <div
-      data-testid="authorship-pagination"
       className="flex w-full justify-center mt-[16px]"
     >
       <div
-        data-testid="authorship-dots"
         className="mx-[2px] self-stretch flex items-center"
       >
         {dots}

@@ -3,6 +3,8 @@ import HomeHero from '@/components/Home/HomeHero';
 import HomeAboutMe from '@/components/Home/HomeAboutMe';
 import HomeTestimonial from '@/components/Home/HomeTestimonial';
 import HomeTestimonialSlider from '@/components/Home/HomeTestimonialSlider';
+import HomeExperience from '@/components/Home/HomeExperience';
+import HomeProjects from '@/components/Home/HomeProjects';
 
 const Home = () => {
   return (
@@ -11,6 +13,8 @@ const Home = () => {
       <HomeHero />
       <HomeTestimonial />
       <HomeAboutMe />
+      <HomeExperience />
+      <HomeProjects />
       <HomeTestimonialSlider />
     </main>
   );
