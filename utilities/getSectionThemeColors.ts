@@ -1,4 +1,3 @@
-
 const textColorClasses = {
   green: 'text-green',
   black: 'text-black',
@@ -14,27 +13,27 @@ const backgroundColorClasses = {
 export const getSectionThemeColors = (
   theme: MT.ThemeColors
 ): {
-  bgColor: string;
-  textColor: string;
+  bgColor: MT.BackgroundColorClasses;
+  textColor: MT.TextColorClasses;
 } => {
   const themes: Record<
     MT.ThemeColors,
     {
-      bgColor: string;
-      textColor: string;
+      bgColor: MT.BackgroundColorClasses;
+      textColor: MT.TextColorClasses;
     }
   > = {
     green: {
-      bgColor: backgroundColorClasses.green,
-      textColor: textColorClasses.black,
+      bgColor: backgroundColorClasses.green as MT.BackgroundColorClasses,
+      textColor: textColorClasses.black as MT.TextColorClasses,
     },
     black: {
-      bgColor: backgroundColorClasses.black,
-      textColor: textColorClasses.green,
+      bgColor: backgroundColorClasses.black as MT.BackgroundColorClasses,
+      textColor: textColorClasses.green as MT.TextColorClasses,
     },
     white: {
-      bgColor: backgroundColorClasses.white,
-      textColor: textColorClasses.black,
+      bgColor: backgroundColorClasses.white as MT.BackgroundColorClasses,
+      textColor: textColorClasses.black as MT.TextColorClasses,
     },
   };
 

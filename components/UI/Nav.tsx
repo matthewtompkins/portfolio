@@ -1,12 +1,15 @@
-import Button from './Button';
 import Link from 'next/link';
 
+import Grid from '../Grid/Grid';
+import Button from './Button';
+
 const Nav: React.FC = (): JSX.Element => {
-    const liStyles = 'text-base lowercase mr-8 font-serif text-green hover:text-white active:text-white focus:text-white';
+  const liStyles =
+    'text-base lowercase mr-12 font-serif text-green hover:text-white active:text-white focus:text-white';
   return (
     <nav className="w-full bg-black px-8 py-12">
-      <div className="max-w-theme mx-auto text-right">
-        <ul className="inline-flex">
+      <Grid>
+        <ul className="inline-flex col-start-2 col-end-12 justify-end">
           <li className={liStyles}>About Me</li>
           <li className={liStyles}>My Work</li>
           <li className={liStyles}>Testimonials</li>
@@ -14,7 +17,7 @@ const Nav: React.FC = (): JSX.Element => {
             <Button title="Contact Me" url="/contact-me" theme="outline" />
           </li>
         </ul>
-      </div>
+      </Grid>
     </nav>
   );
 };

@@ -1,16 +1,12 @@
 import Image from 'next/image';
 import Heading from '../Typography/Heading';
-
 import Grid from '../Grid/Grid';
+
 import Paragraph from '../Typography/Paragraph';
 
 interface TextAndImageProps {
   heading?: MT.HeadingProps;
-  img: {
-    src: string;
-    alt: string;
-    position: 'left' | 'right';
-  };
+  img: MT.ImageProps;
   paragraph: MT.ParagraphProps;
 }
 
@@ -20,15 +16,15 @@ const TextAndImage: React.FC<TextAndImageProps> = ({
   paragraph,
 }): JSX.Element => {
   return (
-    <>
-      <div className="col-span-3">
-        <Image src={img.src} alt={img.alt} />
+    <Grid>
+      <div className={`row-start-1 col-span-3 ${img.position === 'left' ? 'col-start-2' : 'col-start-9'}`}>
+        <Image {...img} />
       </div>
-      <div className="col-span-6">
-        {heading && <Heading color={} {...heading} />}
+      <div className={`row-start-1 col-span-5 ${img.position === 'left' ? 'col-start-7' : 'col-start-2'}`}>
+        {heading && <Heading {...heading} />}
         <Paragraph {...paragraph} />
       </div>
-    </>
+    </Grid>
   );
 };
 
