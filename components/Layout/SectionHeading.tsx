@@ -10,7 +10,7 @@ const SectionHeading: React.FC<SectionHeadingProps> = ({
 }): JSX.Element => {
   return (
     <Grid>
-      <div className="col-start-3 col-span-8">
+      <div className="col-start-3 col-span-8 mb-8">
         <Heading {...heading} />
       </div>
     </Grid>

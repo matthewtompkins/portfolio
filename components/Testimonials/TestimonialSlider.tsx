@@ -1,18 +1,29 @@
-import Image from 'next/image';
 import {
   CarouselProvider,
   Slider,
   Slide,
-  ButtonBack,
-  ButtonNext,
   Dot,
 } from 'pure-react-carousel';
 
+import Testimonial from './Testimonial';
+
 import 'node_modules/pure-react-carousel/dist/react-carousel.es.css';
 
-const TestimonialSlider = (props) => {
-  const authorEls = authors.map((author, index) => (
-    <Slide className="mx-[4px]" index={index} key={index}></Slide>
+interface TestimonialSliderProps {
+  testimonials: MT.TestimonialProps[];
+  textColor: MT.TextColorClasses;
+  uiColor: MT.BackgroundColorClasses;
+}
+
+const TestimonialSlider: React.FC<TestimonialSliderProps> = ({
+  testimonials,
+  textColor,
+  uiColor,
+}) => {
+  const testimonialEls = testimonials.map((testimonial, index) => (
+    <Slide className="mx-[4px]" index={index} key={index}>
+      <Testimonial color={textColor} testimonial={testimonial} />
+    </Slide>
   ));
 
   return (
@@ -22,11 +33,11 @@ const TestimonialSlider = (props) => {
         naturalSlideHeight={0}
         naturalSlideWidth={320}
         isIntrinsicHeight
-        totalSlides={authors.length}
+        totalSlides={testimonials.length}
         touchEnabled
       >
-        <Slider>{authorEls}</Slider>
-        <CarouselPagination length={authors.length} />
+        <Slider>{testimonialEls}</Slider>
+        <CarouselPagination length={testimonials.length} uiColor={uiColor} />
       </CarouselProvider>
     </div>
   );
@@ -36,16 +47,17 @@ export default TestimonialSlider;
 
 interface CarouselPaginationProps {
   length: number;
+  uiColor: MT.BackgroundColorClasses;
 }
 
-const CarouselPagination = ({ length }: CarouselPaginationProps) => {
+const CarouselPagination = ({ length, uiColor }: CarouselPaginationProps) => {
   const dots = [];
   for (let i = 0; i < length; i++) {
     dots.push(
       <Dot
         slide={i}
         key={i}
-        className="h-[12px] w-[12px] bg-[rgb(220,222,225)] rounded-full mx-[2px] disabled:bg-violet"
+        className={`h-[12px] w-[12px] border-2 rounded-full mx-[2px] ${uiColor} disabled:bg-transparent`}
       ></Dot>
     );
   }
@@ -54,26 +66,12 @@ const CarouselPagination = ({ length }: CarouselPaginationProps) => {
       data-testid="authorship-pagination"
       className="flex w-full justify-center mt-[16px]"
     >
-      <ButtonBack>
-        <PaginationArrowButton direction="prev" />
-      </ButtonBack>
       <div
         data-testid="authorship-dots"
         className="mx-[2px] self-stretch flex items-center"
       >
         {dots}
       </div>
-      <ButtonNext>
-        <PaginationArrowButton direction="next" />
-      </ButtonNext>
     </div>
   );
-};
-
-interface PaginationArrowButtonProps {
-  direction: 'next' | 'prev';
-}
-
-const PaginationArrowButton = ({ direction }: PaginationArrowButtonProps) => {
-  return <span></span>;
 };
