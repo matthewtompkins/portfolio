@@ -1,21 +1,40 @@
+
+const textColorClasses = {
+  green: 'text-green',
+  black: 'text-black',
+  white: 'text-white',
+};
+
+const backgroundColorClasses = {
+  green: 'bg-green',
+  black: 'bg-black',
+  white: 'bg-white',
+};
+
 export const getSectionThemeColors = (
   theme: MT.ThemeColors
 ): {
-  bgColor: MT.BackgroundColorClasses;
-  textColor: MT.TextColorClasses;
+  bgColor: string;
+  textColor: string;
 } => {
-  const themes: Record<MT.ThemeColors, { bgColor: MT.BackgroundColorClasses; textColor: MT.TextColorClasses }> = {
+  const themes: Record<
+    MT.ThemeColors,
+    {
+      bgColor: string;
+      textColor: string;
+    }
+  > = {
     green: {
-      bgColor: MT.BackgroundColorClasses.green,
-      textColor: MT.TextColorClasses.black,
+      bgColor: backgroundColorClasses.green,
+      textColor: textColorClasses.black,
     },
     black: {
-      bgColor: MT.BackgroundColorClasses.black,
-      textColor: MT.TextColorClasses.green,
+      bgColor: backgroundColorClasses.black,
+      textColor: textColorClasses.green,
     },
     white: {
-      bgColor: MT.BackgroundColorClasses.white,
-      textColor: MT.TextColorClasses.black,
+      bgColor: backgroundColorClasses.white,
+      textColor: textColorClasses.black,
     },
   };
 
