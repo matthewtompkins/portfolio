@@ -9,7 +9,7 @@ const Nav: React.FC = (): JSX.Element => {
   return (
     <nav className="w-full bg-black px-8 py-12">
       <Grid>
-        <ul className="inline-flex col-start-2 col-end-12 justify-end">
+        <ul className="inline-flex col-start-3 col-end-11 justify-end">
           <li className={liStyles}>About Me</li>
           <li className={liStyles}>My Work</li>
           <li className={liStyles}>Testimonials</li>

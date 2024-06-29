@@ -1,13 +1,17 @@
-import Nav from "@/components/UI/Nav";
-import HomeHero from "@/components/Home/HomeHero";
-import AboutMe from "@/components/Home/AboutMe";
+import Nav from '@/components/UI/Nav';
+import HomeHero from '@/components/Home/HomeHero';
+import HomeAboutMe from '@/components/Home/HomeAboutMe';
+import HomeTestimonial from '@/components/Home/HomeTestimonial';
 
-export default function Home() {
+const Home = () => {
   return (
     <main className="">
       <Nav />
       <HomeHero />
-      <AboutMe />
+      <HomeTestimonial />
+      <HomeAboutMe />
     </main>
   );
-}
+};
+
+export default Home;

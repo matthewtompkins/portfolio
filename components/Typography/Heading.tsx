@@ -7,7 +7,7 @@ const sizeClasses = {
 
 const Heading: React.FC<MT.HeadingProps> = ({color, level, text}): JSX.Element => {
     const Tag = level;
-    return <Tag className={`${color} ${sizeClasses[level]}`}>{text}</Tag>;
+    return <Tag className={`${color} ${sizeClasses[level]} font-serif`}>{text}</Tag>;
 };
 
 export default Heading;

@@ -1,7 +1,7 @@
-import Image from 'next/image';
 import Heading from '../Typography/Heading';
 import Grid from '../Grid/Grid';
 
+import RoundedImage from '../Images/RoundedImage';
 import Paragraph from '../Typography/Paragraph';
 
 interface TextAndImageProps {
@@ -17,10 +17,18 @@ const TextAndImage: React.FC<TextAndImageProps> = ({
 }): JSX.Element => {
   return (
     <Grid>
-      <div className={`row-start-1 col-span-3 ${img.position === 'left' ? 'col-start-2' : 'col-start-9'}`}>
-        <Image {...img} />
+      <div
+        className={`row-start-1 col-span-3 ${
+          img.position === 'left' ? 'col-start-3' : 'col-start-8'
+        }`}
+      >
+        <RoundedImage img={img} />
       </div>
-      <div className={`row-start-1 col-span-5 ${img.position === 'left' ? 'col-start-7' : 'col-start-2'}`}>
+      <div
+        className={`row-start-1 col-span-4 ${
+          img.position === 'left' ? 'col-start-7' : 'col-start-3'
+        }`}
+      >
         {heading && <Heading {...heading} />}
         <Paragraph {...paragraph} />
       </div>

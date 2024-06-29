@@ -19,6 +19,12 @@ declare namespace MT {
   export interface ImageProps {
     src: string;
     alt: string;
-    position: 'left' | 'right';
-  };
+    position?: 'left' | 'right';
+  }
+
+  export interface TestimonialProps {
+    author: string;
+    role: string;
+    text: string;
+  }
 }
