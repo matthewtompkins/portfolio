@@ -55,7 +55,7 @@ const HomeExperience = (): JSX.Element => {
     },
   ];
   return (
-    <div className="py-32 bg-black">
+    <div className="py-48 bg-black">
       <SectionHeading
         heading={{
           color: 'text-green',

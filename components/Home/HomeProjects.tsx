@@ -49,7 +49,7 @@ const HomeProjects: React.FC = (): JSX.Element => {
   ));
 
   return (
-    <div className="bg-white py-32">
+    <div id="work" className="bg-white py-48">
       <SectionHeading
         heading={{
           color: 'text-black',

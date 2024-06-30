@@ -30,7 +30,7 @@ const HomeAboutMe: React.FC = (): JSX.Element => {
     },
   ];
   return (
-    <div className={`${colors.bgColor} py-32`}>
+    <div id="about" className={`${colors.bgColor} py-48`}>
       <SectionHeading
         heading={{ color: 'text-green', level: 'h2', text: 'About Me' }}
       />

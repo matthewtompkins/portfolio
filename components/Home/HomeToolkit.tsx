@@ -48,7 +48,7 @@ const HomeToolkit: React.FC = (): JSX.Element => {
     { src: mixpanel, alt: 'Mixpanel' },
   ];
   return (
-    <div className="bg-white py-32">
+    <div className="bg-white pb-48">
       <SectionHeading
         heading={{ color: 'text-black', level: 'h2', text: 'My Toolkit' }}
       />

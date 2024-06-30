@@ -4,7 +4,7 @@ import Button from '../UI/Button';
 
 const HomeCTA: React.FC = (): JSX.Element => {
   return (
-    <div className="bg-black py-32">
+    <div className="bg-black pb-48">
       <Grid>
         <div className="col-start-3 col-span-8">
           <Heading color="text-green" level="h2" text="Let's work together." />

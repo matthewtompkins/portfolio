@@ -24,7 +24,7 @@ const HomeTestimonialSlider: React.FC = (): JSX.Element => {
   const testimonials = testimonialData.map((cur, ind) => <Testimonial color="text-green" key={ind} testimonial={cur} />);
 
   return (
-    <div className="bg-black py-32">
+    <div id="testimonials" className="bg-black py-48">
       <Grid>
         <div className="col-start-3 col-span-8">
           <CarouselSlider

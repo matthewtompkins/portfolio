@@ -10,11 +10,27 @@ const Nav: React.FC = (): JSX.Element => {
     <nav className="w-full bg-black px-8 py-12">
       <Grid>
         <ul className="inline-flex col-start-3 col-end-11 justify-end">
-          <li className={liStyles}>About Me</li>
-          <li className={liStyles}>My Work</li>
-          <li className={liStyles}>Testimonials</li>
-          <li>
-            <Button title="Let's work together" url="/contact-me" theme="outline" />
+          <li key="nav-0" className={liStyles}>
+            <a href="#about" aria-label="Go to about me section">
+              About Me
+            </a>
+          </li>
+          <li key="nav-1" className={liStyles}>
+            <a href="#work" aria-label="Go to my work section">
+              My Work
+            </a>
+          </li>
+          <li key="nav-2" className={liStyles}>
+            <a href="#testimonials" aria-label="Go to testimonials section">
+              Testimonials
+            </a>
+          </li>
+          <li key="nav-3">
+            <Button
+              title="Let's work together"
+              url="/contact-me"
+              theme="outline"
+            />
           </li>
         </ul>
       </Grid>

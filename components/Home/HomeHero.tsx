@@ -21,7 +21,7 @@ const HomeHero: React.FC = (): JSX.Element => {
             <li key="1">Headless Wordpress Development</li>
             <li key="2">React & NextJS Development</li>
           </ul>
-          <Button theme="outline" title="Contact Me" url="/contact" />
+          <Button theme="outline" title="Let's work together" url="/contact" />
         </div>
         <div className="col-span-3 col-start-8">
           <RoundedImage
