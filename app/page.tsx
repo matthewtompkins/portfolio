@@ -5,6 +5,8 @@ import HomeTestimonial from '@/components/Home/HomeTestimonial';
 import HomeTestimonialSlider from '@/components/Home/HomeTestimonialSlider';
 import HomeExperience from '@/components/Home/HomeExperience';
 import HomeProjects from '@/components/Home/HomeProjects';
+import HomeToolkit from '@/components/Home/HomeToolkit';
+import HomeCTA from '@/components/Home/HomeCTA';
 
 const Home = () => {
   return (
@@ -15,7 +17,9 @@ const Home = () => {
       <HomeAboutMe />
       <HomeExperience />
       <HomeProjects />
+      <HomeToolkit />
       <HomeTestimonialSlider />
+      <HomeCTA />
     </main>
   );
 };

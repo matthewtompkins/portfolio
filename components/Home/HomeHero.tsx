@@ -14,7 +14,7 @@ const HomeHero: React.FC = (): JSX.Element => {
             Matt Tompkins
           </h1>
           <h2 className="font-serif text-md leading-none mb-6">
-            A people-first web developer specializing in:
+            A people-first web developer specializing&nbsp;in:
           </h2>
           <ul className="text-base [&>li:not(:last-child)]:mb-2 mb-10">
             <li key="0">Custom Wordpress Themes & Plugins</li>

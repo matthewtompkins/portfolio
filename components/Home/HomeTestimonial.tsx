@@ -1,7 +1,7 @@
 import Testimonial from '../Testimonials/Testimonial';
 import Grid from '../Grid/Grid';
 
-const HomeTestimonial = (): JSX.Element => {
+const HomeTestimonial: React.FC = (): JSX.Element => {
   const testimonialData: MT.TestimonialProps = {
     author: 'Mindy P.',
     role: 'Client',

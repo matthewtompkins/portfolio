@@ -7,7 +7,7 @@ import passenger from '@/public/images/passenger.png';
 import Link from 'next/link';
 import RoundedImage from '../Images/RoundedImage';
 
-const HomeProjects = (): JSX.Element => {
+const HomeProjects: React.FC = (): JSX.Element => {
   const projectData: ProjectProps[] = [
     {
       description:
@@ -76,10 +76,16 @@ interface ProjectProps {
   title: string;
 }
 
-const Project: React.FC<ProjectProps> = ({ description, img, link, subtitle, title }): JSX.Element => {
+const Project: React.FC<ProjectProps> = ({
+  description,
+  img,
+  link,
+  subtitle,
+  title,
+}): JSX.Element => {
   return (
     <Link href={link}>
-      <div className="bg-black min-h-[500px] p-16 rounded-lg">
+      <div className="bg-black min-h-[500px] p-16 rounded-[8px]">
         <div className="mb-8">
           <RoundedImage img={img} />
         </div>
@@ -87,7 +93,7 @@ const Project: React.FC<ProjectProps> = ({ description, img, link, subtitle, tit
         <Heading
           level="h4"
           text={subtitle}
-          style={'font-sans'}
+          style="font-sans"
           color="text-green"
         />
         <div className="mt-4">

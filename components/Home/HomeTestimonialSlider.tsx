@@ -2,7 +2,7 @@ import CarouselSlider from '../Slider/CarouselSlider';
 import Testimonial from '../Testimonials/Testimonial';
 import Grid from '../Grid/Grid';
 
-const HomeTestimonialSlider = (): JSX.Element => {
+const HomeTestimonialSlider: React.FC = (): JSX.Element => {
   const testimonialData: MT.TestimonialProps[] = [
     {
       author: 'Mindy P.',

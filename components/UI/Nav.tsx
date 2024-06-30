@@ -5,7 +5,7 @@ import Button from './Button';
 
 const Nav: React.FC = (): JSX.Element => {
   const liStyles =
-    'text-base lowercase mr-12 font-serif text-green hover:text-white active:text-white focus:text-white';
+    'text-sm lowercase mr-12 font-serif text-green hover:text-white active:text-white focus:text-white';
   return (
     <nav className="w-full bg-black px-8 py-12">
       <Grid>
