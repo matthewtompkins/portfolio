@@ -7,7 +7,7 @@ const Nav: React.FC = (): JSX.Element => {
   const liStyles =
     'text-sm lowercase mr-12 font-serif text-green tracking-wide hover:text-white active:text-white focus:text-white';
   return (
-    <nav className="w-full bg-transparent px-8 py-12">
+    <nav className="w-full bg-black px-8 py-12">
       <Grid>
         <ul className="inline-flex col-start-3 col-end-11 justify-end">
           <li className={liStyles}>About Me</li>
