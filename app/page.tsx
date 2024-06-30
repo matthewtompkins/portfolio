@@ -7,6 +7,7 @@ import HomeExperience from '@/components/Home/HomeExperience';
 import HomeProjects from '@/components/Home/HomeProjects';
 import HomeToolkit from '@/components/Home/HomeToolkit';
 import HomeCTA from '@/components/Home/HomeCTA';
+import Footer from '@/components/UI/Footer';
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
       <HomeToolkit />
       <HomeTestimonialSlider />
       <HomeCTA />
+      <Footer />
     </main>
   );
 };
