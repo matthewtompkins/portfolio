@@ -1,6 +1,7 @@
 import CarouselSlider from '../Slider/CarouselSlider';
 import Testimonial from '../Testimonials/Testimonial';
 import Grid from '../Grid/Grid';
+import { styleDefaults } from '@/styles/defaults';
 
 const HomeTestimonialSlider: React.FC = (): JSX.Element => {
   const testimonialData: MT.TestimonialProps[] = [
@@ -24,7 +25,7 @@ const HomeTestimonialSlider: React.FC = (): JSX.Element => {
   const testimonials = testimonialData.map((cur, ind) => <Testimonial color="text-green" key={ind} testimonial={cur} />);
 
   return (
-    <div id="testimonials" className="bg-black py-48">
+    <div id="testimonials" className={`bg-black ${styleDefaults.sectionPadding}`}>
       <Grid>
         <div className="col-start-3 col-span-8">
           <CarouselSlider

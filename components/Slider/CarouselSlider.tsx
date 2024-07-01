@@ -13,9 +13,9 @@ const CarouselSlider: React.FC<TestimonialSliderProps> = ({
   els,
   uiColor,
 }) => {
-  const elSlides = els.map((el, index) => (
-    <Slide className="mx-[4px]" index={index} key={index}>
-      {el}
+  const elSlides = els.map((cur, ind) => (
+    <Slide className="mx-[4px]" index={ind} key={ind}>
+      {cur}
     </Slide>
   ));
 

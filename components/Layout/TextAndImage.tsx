@@ -18,19 +18,19 @@ const TextAndImage: React.FC<TextAndImageProps> = ({
   return (
     <Grid>
       <div
+        className={`row-start-1 col-span-4 ${
+          img.position === 'left' ? 'col-start-7' : 'col-start-3'
+        } mb-24 md:mb-0`}
+      >
+        {heading && <Heading {...heading} />}
+        <Paragraph {...paragraph} />
+      </div>
+      <div
         className={`row-start-1 col-span-3 ${
           img.position === 'left' ? 'col-start-3' : 'col-start-8'
         }`}
       >
         <RoundedImage img={img} />
-      </div>
-      <div
-        className={`row-start-1 col-span-4 ${
-          img.position === 'left' ? 'col-start-7' : 'col-start-3'
-        }`}
-      >
-        {heading && <Heading {...heading} />}
-        <Paragraph {...paragraph} />
       </div>
     </Grid>
   );

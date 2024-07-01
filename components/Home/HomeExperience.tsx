@@ -2,6 +2,7 @@ import SectionHeading from '../Layout/SectionHeading';
 import Grid from '../Grid/Grid';
 import Heading from '../Typography/Heading';
 import Paragraph from '../Typography/Paragraph';
+import { styleDefaults } from '@/styles/defaults';
 
 const HomeExperience = (): JSX.Element => {
   const experienceData: ExperienceEntryProps[] = [
@@ -55,7 +56,7 @@ const HomeExperience = (): JSX.Element => {
     },
   ];
   return (
-    <div className="py-48 bg-black">
+    <div className={`${styleDefaults.sectionPadding} bg-black`}>
       <SectionHeading
         heading={{
           color: 'text-green',
@@ -64,8 +65,8 @@ const HomeExperience = (): JSX.Element => {
         }}
       />
       <Grid>
-        {experienceData.map((entry, index) => {
-          return <ExperienceEntry key={index} {...entry} />;
+        {experienceData.map((cur, ind) => {
+          return <ExperienceEntry key={ind} {...cur} />;
         })}
       </Grid>
     </div>

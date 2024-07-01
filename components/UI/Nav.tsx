@@ -4,21 +4,22 @@ import Button from './Button';
 import { styleDefaults } from '@/styles/defaults';
 
 const Nav: React.FC = (): JSX.Element => {
+  const navLinkStyles = `mr-8 ${styleDefaults.link}`;
   return (
-    <nav className="w-full bg-black px-8 py-12">
+    <nav className="w-full bg-black py-12">
       <Grid>
         <ul className="inline-flex col-start-3 col-end-11 justify-end">
-          <li key="nav-0" className={styleDefaults.link}>
+          <li key="nav-0" className={navLinkStyles}>
             <a href="#about" aria-label="Go to about me section">
               About Me
             </a>
           </li>
-          <li key="nav-1" className={styleDefaults.link}>
+          <li key="nav-1" className={navLinkStyles}>
             <a href="#work" aria-label="Go to my work section">
               My Work
             </a>
           </li>
-          <li key="nav-2" className={styleDefaults.link}>
+          <li key="nav-2" className={navLinkStyles}>
             <a href="#testimonials" aria-label="Go to testimonials section">
               Testimonials
             </a>

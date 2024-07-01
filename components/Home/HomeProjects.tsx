@@ -6,6 +6,7 @@ import Paragraph from '../Typography/Paragraph';
 import passenger from '@/public/images/passenger.png';
 import Link from 'next/link';
 import RoundedImage from '../Images/RoundedImage';
+import { styleDefaults } from '@/styles/defaults';
 
 const HomeProjects: React.FC = (): JSX.Element => {
   const projectData: ProjectProps[] = [
@@ -49,7 +50,7 @@ const HomeProjects: React.FC = (): JSX.Element => {
   ));
 
   return (
-    <div id="work" className="bg-white py-48">
+    <div id="work" className={`bg-white ${styleDefaults.sectionPadding}`}>
       <SectionHeading
         heading={{
           color: 'text-black',
@@ -85,7 +86,7 @@ const Project: React.FC<ProjectProps> = ({
 }): JSX.Element => {
   return (
     <Link href={link}>
-      <div className="bg-black min-h-[500px] p-16 rounded-[8px]">
+      <div className="bg-black md:min-h-[500px] p-16 rounded-[8px]">
         <div className="mb-8">
           <RoundedImage img={img} />
         </div>

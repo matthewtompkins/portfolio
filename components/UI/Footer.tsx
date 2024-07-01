@@ -5,7 +5,7 @@ import { styleDefaults } from '@/styles/defaults';
 
 const Footer: React.FC = (): JSX.Element => {
   return (
-    <div className="bg-black py-24">
+    <div className="bg-black py-12 md:py-24">
       <Grid>
         <div className="col-start-3 col-span-8 text-center">
           <ul className='text-green inline-flex mx-auto mb-4'>

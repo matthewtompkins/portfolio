@@ -39,8 +39,8 @@ interface FiveStarsProps {
 
 const FiveStars: React.FC<FiveStarsProps> = ({color}): JSX.Element => {
   const starIcon = color === 'green' ? starGreen : color === 'black' ? starBlack : starWhite;
-  const stars = Array.from({ length: 5 }, (_, index) => {
-    return <Image key={index} alt="star" height={24} src={starIcon} width={24} />;
+  const stars = Array.from({ length: 5 }, (_, ind) => {
+    return <Image key={ind} alt="star" height={24} src={starIcon} width={24} />;
   });
   return <div className="inline-flex ml-auto">{stars}</div>;
 };

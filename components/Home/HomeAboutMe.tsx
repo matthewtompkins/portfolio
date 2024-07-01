@@ -2,6 +2,7 @@ import { getSectionThemeColors } from '@/utilities/getSectionThemeColors';
 import SectionHeading from '../Layout/SectionHeading';
 import TextAndImage from '../Layout/TextAndImage';
 import placeholder from '@/public/images/placeholder.jpg';
+import { styleDefaults } from '@/styles/defaults';
 
 const HomeAboutMe: React.FC = (): JSX.Element => {
   const colors = getSectionThemeColors('black');
@@ -30,13 +31,13 @@ const HomeAboutMe: React.FC = (): JSX.Element => {
     },
   ];
   return (
-    <div id="about" className={`${colors.bgColor} py-48`}>
+    <div id="about" className={`${colors.bgColor} ${styleDefaults.sectionPadding}`}>
       <SectionHeading
         heading={{ color: 'text-green', level: 'h2', text: 'About Me' }}
       />
-      {textAndImageData.map((cur) => {
+      {textAndImageData.map((cur, ind) => {
         return (
-          <div key={cur.img.src} className="[&:not(:last-child)]:mb-24">
+          <div key={ind} className="[&:not(:last-child)]:mb-24">
             <TextAndImage img={cur.img} paragraph={cur.paragraph} />
           </div>
         );
