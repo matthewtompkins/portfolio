@@ -5,12 +5,14 @@ import { getSectionThemeColors } from '@/utilities/getSectionThemeColors';
 import RoundedImage from '../Images/RoundedImage';
 import { styleDefaults } from '@/styles/defaults';
 
-const HomeHero: React.FC<MT.CallbackProps> = ({callback}): JSX.Element => {
+const HomeHero: React.FC<MT.CallbackProps> = ({ callback }): JSX.Element => {
   const colors = getSectionThemeColors('black');
   return (
     <div className={`${colors.bgColor} ${styleDefaults.sectionPadding}`}>
       <Grid>
-        <div className={`col-start-3 col-span-5 ${colors.textColor} mb-24 md:mb-0`}>
+        <div
+          className={`col-start-3 col-span-5 ${colors.textColor} mb-24 md:mb-0`}
+        >
           <h1 className="font-serif text-xl leading-none mb-8">
             Matt Tompkins
           </h1>
@@ -18,11 +20,15 @@ const HomeHero: React.FC<MT.CallbackProps> = ({callback}): JSX.Element => {
             A people-first web developer specializing&nbsp;in:
           </h2>
           <ul className="text-base [&>li:not(:last-child)]:mb-2 mb-10">
-            <li key="0">Custom Wordpress Themes&nbsp;&&nbsp;Plugins</li>
-            <li key="1">Headless Wordpress Development</li>
-            <li key="2">React & NextJS Development</li>
+            <li key="0">React & NextJS Development</li>
+            <li key="1">Custom Wordpress Themes&nbsp;&&nbsp;Plugins</li>
+            <li key="2">Headless Wordpress Development</li>
           </ul>
-          <Button theme="outline" title="Let's work together" onClick={callback} />
+          <Button
+            theme="outline"
+            title="Let's work together"
+            onClick={callback}
+          />
         </div>
         <div className="col-span-3 col-start-8">
           <RoundedImage

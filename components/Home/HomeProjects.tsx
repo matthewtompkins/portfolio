@@ -78,7 +78,7 @@ const HomeProjects: React.FC = (): JSX.Element => {
         src: blackArchives as unknown as string,
       } as MT.ImageProps,
       link: 'https://www.blackarchives.org',
-      subtitle: 'Custom Wordpress Theme',
+      subtitle: 'A Custom Wordpress Theme',
       title: 'Black Archives of Kansas City',
     },
   ];
