@@ -3,12 +3,12 @@ import Button from './Button';
 
 import { styleDefaults } from '@/styles/defaults';
 
-const Nav: React.FC = (): JSX.Element => {
+const Nav: React.FC<MT.CallbackProps> = ({callback}): JSX.Element => {
   const navLinkStyles = `mr-8 ${styleDefaults.link}`;
   return (
     <nav className="w-full bg-black py-12">
       <Grid>
-        <ul className="inline-flex col-start-3 col-end-11 justify-end">
+        <ul className="inline-flex col-start-3 col-end-11 justify-end items-center">
           <li key="nav-0" className={navLinkStyles}>
             <a href="#about" aria-label="Go to about me section">
               About Me
@@ -26,8 +26,8 @@ const Nav: React.FC = (): JSX.Element => {
           </li>
           <li key="nav-3">
             <Button
+              onClick={callback}
               title="Let's work together"
-              url="/contact-me"
               theme="outline"
             />
           </li>

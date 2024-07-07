@@ -9,7 +9,7 @@ interface ButtonProps {
 
 const themes = {
   outline: 'border-2 border-green text-green hover:bg-green hover:text-black active:bg-green active:text-black focus:bg-green focus:text-black',
-  solid: 'bg-green text-black',
+  solid: 'border-2 border-green bg-green text-black hover:bg-transparent hover:text-green active:bg-transparent active:text-green focus:bg-transparent focus:text-green',
 };
 
 const Button: React.FC<ButtonProps> = ({

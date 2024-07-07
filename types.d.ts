@@ -8,7 +8,8 @@ declare namespace MT {
   export interface HeadingProps {
     color: TextColorClasses;
     level: 'h1' | 'h2' | 'h3' | 'h4';
-    style?: 'font-serif' | 'font-sans';
+    fontStyle?: 'font-serif' | 'font-sans';
+    style?: string;
     text: string;
   }
 
@@ -27,5 +28,9 @@ declare namespace MT {
     author: string;
     role: string;
     text: string;
+  }
+
+  export interface CallbackProps {
+    callback: () => void;
   }
 }

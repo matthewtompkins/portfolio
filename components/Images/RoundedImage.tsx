@@ -1,15 +1,19 @@
-import Image from "next/image";
+import Image from 'next/image';
 
 interface RoundedImageProps {
-    img: MT.ImageProps;
+  img: MT.ImageProps;
+  style?: string;
 }
 
-const RoundedImage: React.FC<RoundedImageProps> = ({ img }): JSX.Element => {
-    return (
-        <div className='overflow-hidden rounded-lg max-w-[320px] mx-auto'>
-            <Image {...img} />
-        </div>
-    );
+const RoundedImage: React.FC<RoundedImageProps> = ({
+  img,
+  style = '',
+}): JSX.Element => {
+  return (
+    <div className={`overflow-hidden rounded-lg max-w-[320px] mx-auto ${style}`}>
+      <Image {...img} />
+    </div>
+  );
 };
 
 export default RoundedImage;

@@ -88,13 +88,13 @@ const Project: React.FC<ProjectProps> = ({
     <Link href={link}>
       <div className="bg-black md:min-h-[500px] p-16 rounded-[8px]">
         <div className="mb-8">
-          <RoundedImage img={img} />
+          <RoundedImage img={img} style='max-w-full' />
         </div>
         <Heading level="h3" text={title} color="text-green" />
         <Heading
           level="h4"
           text={subtitle}
-          style="font-sans"
+          fontStyle="font-sans"
           color="text-green"
         />
         <div className="mt-4">

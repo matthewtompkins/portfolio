@@ -1,3 +1,7 @@
+'use client';
+
+import { useState } from 'react';
+
 import Nav from '@/components/UI/Nav';
 import HomeHero from '@/components/Home/HomeHero';
 import HomeAboutMe from '@/components/Home/HomeAboutMe';
@@ -8,19 +12,29 @@ import HomeProjects from '@/components/Home/HomeProjects';
 import HomeToolkit from '@/components/Home/HomeToolkit';
 import HomeCTA from '@/components/Home/HomeCTA';
 import Footer from '@/components/UI/Footer';
+import ContactOverlay from '@/components/UI/ContactOverlay';
 
 const Home = () => {
+  const [showContact, setShowContact] = useState(false);
+
+  const handleContact = () => {
+    setShowContact(!showContact);
+  };
+
+  const contactStyle = showContact ? 'overflow-hidden h-screen' : '';
+
   return (
-    <main className="">
-      <Nav />
-      <HomeHero />
+    <main className={`${contactStyle}`}>
+      {showContact && <ContactOverlay callback={handleContact} />}
+      <Nav callback={handleContact} />
+      <HomeHero callback={handleContact} />
       <HomeTestimonial />
       <HomeAboutMe />
       <HomeExperience />
       <HomeProjects />
       <HomeToolkit />
       <HomeTestimonialSlider />
-      <HomeCTA />
+      <HomeCTA callback={handleContact} />
       <Footer />
     </main>
   );

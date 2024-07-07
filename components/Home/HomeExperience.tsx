@@ -9,6 +9,10 @@ const HomeExperience = (): JSX.Element => {
     {
       dates: '2021 - Present',
       skills: [
+        'Soft Skills',
+        'Stakeholder Management',
+        'Project Management',
+        'Collaboration',
         'React',
         'NextJS',
         'TypeScript',
@@ -18,41 +22,56 @@ const HomeExperience = (): JSX.Element => {
         'MySQL',
         'DataDog',
         'MixPanel',
+        'Google Analytics',
+        'Google Tag Manager',
       ],
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       title: 'Skillshare',
     },
     {
-      dates: '2021 - Present',
+      dates: '2016 - Present',
       skills: [
-        'React',
-        'NextJS',
-        'TypeScript',
-        'TailwindCSS',
+        'Soft Skills',
+        'Client Management',
+        'Time Management',
+        'Project Management',
+        'Adaptability',
+        'Problem Solving',
         'Wordpress',
         'PHP',
         'MySQL',
-        'DataDog',
-        'MixPanel',
       ],
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-      title: 'Skillshare',
+      title: 'Freelance Web Developer',
     },
     {
-      dates: '2021 - Present',
+      dates: '2015 - 2022',
       skills: [
-        'React',
-        'NextJS',
-        'TypeScript',
-        'TailwindCSS',
-        'Wordpress',
-        'PHP',
-        'MySQL',
-        'DataDog',
-        'MixPanel',
+        'Collaboration',
+        'Soft Skills',
+        'Adaptability',
+        'Stress Management',
+        'Creativity',
+        'Performance',
+        'Music Production',
+        'Project Management',
       ],
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-      title: 'Skillshare',
+      title: 'Professional Musician',
+    },
+    {
+      dates: '2009 - 2019',
+      skills: [
+        'Soft Skills',
+        'Guest Relations',
+        'Client Management',
+        'Stress Management',
+        'Performance',
+        'Sales',
+        'Product Knowledge',
+      ],
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      title: 'Wine Steward, Bartender, Waiter',
     },
   ];
   return (
@@ -91,12 +110,17 @@ const ExperienceEntry: React.FC<ExperienceEntryProps> = ({
   return (
     <>
       <div className="col-start-3 col-span-2">
-        <Heading level="h3" text={title} color="text-green" />
+        <Heading
+          level="h3"
+          text={title}
+          color="text-green"
+          style="leading-none"
+        />
         <Heading level="h4" text={dates} color="text-green" />
       </div>
       <div className="col-start-6 col-span-5 mb-12">
         <Paragraph text={text} color="text-green" />
-        <div className="flex flex-wrap mt-8">
+        <div className="flex flex-wrap mt-8 ml-[-4px]">
           {skills.map((cur, ind) => {
             return (
               <span

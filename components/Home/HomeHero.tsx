@@ -5,7 +5,7 @@ import { getSectionThemeColors } from '@/utilities/getSectionThemeColors';
 import RoundedImage from '../Images/RoundedImage';
 import { styleDefaults } from '@/styles/defaults';
 
-const HomeHero: React.FC = (): JSX.Element => {
+const HomeHero: React.FC<MT.CallbackProps> = ({callback}): JSX.Element => {
   const colors = getSectionThemeColors('black');
   return (
     <div className={`${colors.bgColor} ${styleDefaults.sectionPadding}`}>
@@ -22,7 +22,7 @@ const HomeHero: React.FC = (): JSX.Element => {
             <li key="1">Headless Wordpress Development</li>
             <li key="2">React & NextJS Development</li>
           </ul>
-          <Button theme="outline" title="Let's work together" url="/contact" />
+          <Button theme="outline" title="Let's work together" onClick={callback} />
         </div>
         <div className="col-span-3 col-start-8">
           <RoundedImage

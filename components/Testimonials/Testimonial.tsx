@@ -18,13 +18,16 @@ const Testimonial: React.FC<TestimonialProps> = ({
 }): JSX.Element => {
   return (
     <>
-      <Paragraph color={color} text={`"${testimonial.text}"`} />
+      <div className="mb-8">
+        <Paragraph color={color} text={`"${testimonial.text}"`} />
+      </div>
       <div className="text-right">
         <Heading
           color={color}
           level="h3"
           text={`- ${testimonial.author}, ${testimonial.role}`}
         />
+
         <FiveStars color={uiColor} />
       </div>
     </>
@@ -37,8 +40,9 @@ interface FiveStarsProps {
   color?: MT.ThemeColors;
 }
 
-const FiveStars: React.FC<FiveStarsProps> = ({color}): JSX.Element => {
-  const starIcon = color === 'green' ? starGreen : color === 'black' ? starBlack : starWhite;
+const FiveStars: React.FC<FiveStarsProps> = ({ color }): JSX.Element => {
+  const starIcon =
+    color === 'green' ? starGreen : color === 'black' ? starBlack : starWhite;
   const stars = Array.from({ length: 5 }, (_, ind) => {
     return <Image key={ind} alt="star" height={24} src={starIcon} width={24} />;
   });
