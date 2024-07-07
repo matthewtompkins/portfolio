@@ -1,8 +1,17 @@
-const Paragraph: React.FC<MT.ParagraphProps> = ({ color, text }): JSX.Element => {
+const Paragraph: React.FC<MT.ParagraphProps> = ({
+  color,
+  html = false,
+  text,
+}): JSX.Element => {
+  const styles = `${color} text-base font-sans`;
   return (
-    <p className={`${color} text-base font-sans`}>
-      {text}
-    </p>
+    <>
+      {html ? (
+        <p className={`${styles}`} dangerouslySetInnerHTML={{ __html: text }} />
+      ) : (
+        <p className={`${styles}`}>{text}</p>
+      )}
+    </>
   );
 };
 

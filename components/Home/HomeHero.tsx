@@ -1,6 +1,6 @@
 import Grid from '../Grid/Grid';
 import Button from '../UI/Button';
-import profile from '@/public/images/placeholder.jpg';
+import profile from '@/public/images/llama.jpg';
 import { getSectionThemeColors } from '@/utilities/getSectionThemeColors';
 import RoundedImage from '../Images/RoundedImage';
 import { styleDefaults } from '@/styles/defaults';

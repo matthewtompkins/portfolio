@@ -75,7 +75,7 @@ const HomeExperience = (): JSX.Element => {
     },
   ];
   return (
-    <div className={`${styleDefaults.sectionPadding} bg-black`}>
+    <div className={`pb-24 md:pb-48 bg-black`}>
       <SectionHeading
         heading={{
           color: 'text-green',

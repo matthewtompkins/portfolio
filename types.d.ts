@@ -7,14 +7,16 @@ declare namespace MT {
 
   export interface HeadingProps {
     color: TextColorClasses;
-    level: 'h1' | 'h2' | 'h3' | 'h4';
     fontStyle?: 'font-serif' | 'font-sans';
+    html?: boolean;
+    level: 'h1' | 'h2' | 'h3' | 'h4';
     style?: string;
     text: string;
   }
 
   export interface ParagraphProps {
     color: TextColorClasses;
+    html?: boolean;
     text: string;
   }
 

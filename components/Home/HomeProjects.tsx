@@ -7,6 +7,8 @@ import passenger from '@/public/images/passenger.jpg';
 import br from '@/public/images/br.jpg';
 import blackArchives from '@/public/images/black-archives.jpg';
 import skBlog from '@/public/images/sk-blog.jpg';
+import cubeworks from '@/public/images/cubeworks.jpg';
+import madisonMiles from '@/public/images/madison-miles.jpg';
 import Link from 'next/link';
 import RoundedImage from '../Images/RoundedImage';
 import { styleDefaults } from '@/styles/defaults';
@@ -37,7 +39,7 @@ const HomeProjects: React.FC = (): JSX.Element => {
     },
     {
       description:
-        'Blind Renaissance is an experienced, innovative design firm local to the Wenatchee Valley. Founded in 1972, Blind Renaissance has been creating for the Pacific Northwest and the world ever since.',
+        'Blind Renaissance is an experienced, innovative design firm local to the Wenatchee Valley. I worked with Blind Renaissance on a number of projects, including a redesign of their own website.',
       img: {
         alt: 'Blind Renaissance',
         src: br as unknown as string,
@@ -45,6 +47,28 @@ const HomeProjects: React.FC = (): JSX.Element => {
       link: 'https://www.icblind.com',
       subtitle: 'A Custom Wordpress Theme',
       title: 'Blind Renaissance',
+    },
+    {
+      description:
+        'Cubeworks creates wireless micro-sensors for scientific and personal application. I created a custom Wordpress theme for their website and a subsequent redesign several years later.',
+      img: {
+        alt: 'Cubeworks',
+        src: cubeworks as unknown as string,
+      } as MT.ImageProps,
+      link: 'https://www.cubeworks.io',
+      subtitle: 'A Custom Wordpress Theme',
+      title: 'Cubeworks',
+    },
+    {
+      description:
+        'Madison Miles is one of a number of site redesigns I did for Soliant Health - a company specializing in temporary work placement in education and health.',
+      img: {
+        alt: 'Madison Miles',
+        src: madisonMiles as unknown as string,
+      } as MT.ImageProps,
+      link: 'https://www.madisonmiles.com',
+      subtitle: 'A Custom Wordpress Theme',
+      title: 'Madison Miles',
     },
     {
       description:

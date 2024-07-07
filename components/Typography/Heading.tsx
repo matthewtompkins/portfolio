@@ -7,16 +7,25 @@ const sizeClasses = {
 
 const Heading: React.FC<MT.HeadingProps> = ({
   color,
-  level,
   fontStyle = 'font-serif',
+  html = false,
+  level,
   style = '',
   text,
 }): JSX.Element => {
   const Tag = level;
+  const styles = `${color} ${sizeClasses[level]} ${fontStyle} ${style}`;
   return (
-    <Tag className={`${color} ${sizeClasses[level]} ${fontStyle} ${style}`}>
-      {text}
-    </Tag>
+    <>
+      {html ? (
+        <Tag
+          className={`${styles}`}
+          dangerouslySetInnerHTML={{ __html: text }}
+        />
+      ) : (
+        <Tag className={`${styles}`}>{text}</Tag>
+      )}
+    </>
   );
 };
 
