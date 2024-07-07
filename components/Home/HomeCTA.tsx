@@ -19,8 +19,8 @@ const HomeCTA: React.FC<MT.CallbackProps> = ({ callback }): JSX.Element => {
             color="text-green"
             level="h3"
             fontStyle="font-sans"
-            text="If you're interested in working together, give me a shout! 
-I'd love to know a bit more about your project."
+            text="If you're interested in working together, give me a shout!
+I'd love to know more about your project."
           />
           <div className="mt-16">
             <Button
