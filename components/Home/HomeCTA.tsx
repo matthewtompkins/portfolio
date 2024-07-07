@@ -7,7 +7,14 @@ const HomeCTA: React.FC<MT.CallbackProps> = ({ callback }): JSX.Element => {
     <div className="bg-black pb-24 md:pb-48">
       <Grid>
         <div className="col-start-3 col-span-8">
-          <Heading color="text-green" level="h2" text="Let's work together." />
+          <div className="mb-6">
+            <Heading
+              color="text-green"
+              level="h2"
+              text="Let's work together."
+              style="leading-none"
+            />
+          </div>
           <Heading
             color="text-green"
             level="h3"

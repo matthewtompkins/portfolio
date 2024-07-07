@@ -8,7 +8,7 @@ const Footer: React.FC = (): JSX.Element => {
     <div className="bg-black py-12 md:py-24">
       <Grid>
         <div className="col-start-3 col-span-8 text-center">
-          <ul className='text-green inline-flex mx-auto mb-4'>
+          <ul className="text-green inline-flex flex-wrap mx-auto mb-4">
             <li key="footer-0" className={`${styleDefaults.link} mx-4`}>
               <a href="#about">About Me</a>
             </li>
@@ -18,11 +18,17 @@ const Footer: React.FC = (): JSX.Element => {
             <li key="footer-2" className={`${styleDefaults.link} mx-4`}>
               <a href="#testimonials">Testimonials</a>
             </li>
-            <li key="footer-3" className={`${styleDefaults.link} mx-4`}>
+            <li
+              key="footer-3"
+              className={`${styleDefaults.link} mx-4 hidden md:block`}
+            >
               <a href="">Contact</a>
             </li>
           </ul>
-          <Paragraph color="text-green" text={`© ${new Date().getFullYear()}, Matt Tompkins`} />
+          <Paragraph
+            color="text-green"
+            text={`© ${new Date().getFullYear()}, Matt Tompkins`}
+          />
         </div>
       </Grid>
     </div>

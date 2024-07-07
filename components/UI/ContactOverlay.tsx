@@ -25,7 +25,7 @@ const ContactOverlay: React.FC<MT.CallbackProps> = ({
 
   return (
     <div className="backdrop-blur-sm absolute top-0 left-0 h-full w-full flex items-center justify-center">
-      <div className="max-w-full w-[700px] py-32 px-16 bg-black rounded-lg relative">
+      <div className="max-w-full w-[700px] py-32 px-24 mx-4 bg-black rounded-lg relative border-2 border-green">
         {copied ? (
           <Heading
             level="h3"
@@ -42,26 +42,26 @@ const ContactOverlay: React.FC<MT.CallbackProps> = ({
               color="text-green"
               fontStyle="font-sans"
             />
-            <div className="flex mt-8">
-              <span className="mr-8">
+            <div className="mx-auto md:flex mt-8">
+              <div className="mb-8 md:mr-8 md:mb-0">
                 <Button
                   theme="outline"
                   title="Copy my email"
                   onClick={copyHandler}
                 />
-              </span>
-              <span>
+              </div>
+              <div>
                 <Button
                   onClick={openClientHandler}
                   theme="solid"
                   title="Open mail client"
                 />
-              </span>
+              </div>
             </div>
           </>
         )}
         <button
-          className="text-green text-md absolute top-4 right-8 font-sans"
+          className="text-green text-md absolute top-8 right-16 font-sans"
           onClick={callback}
           title="Close Popup"
         >

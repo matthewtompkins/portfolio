@@ -18,7 +18,7 @@ const HomeHero: React.FC<MT.CallbackProps> = ({callback}): JSX.Element => {
             A people-first web developer specializing&nbsp;in:
           </h2>
           <ul className="text-base [&>li:not(:last-child)]:mb-2 mb-10">
-            <li key="0">Custom Wordpress Themes & Plugins</li>
+            <li key="0">Custom Wordpress Themes&nbsp;&&nbsp;Plugins</li>
             <li key="1">Headless Wordpress Development</li>
             <li key="2">React & NextJS Development</li>
           </ul>

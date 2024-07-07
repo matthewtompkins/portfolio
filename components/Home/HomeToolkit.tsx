@@ -53,7 +53,7 @@ const HomeToolkit: React.FC = (): JSX.Element => {
         heading={{ color: 'text-black', level: 'h2', text: 'My Toolkit' }}
       />
       <Grid>
-        <div className="col-start-3 col-span-8 grid grid-cols-6 gap-32">
+        <div className="col-start-3 col-span-8 grid grid-cols-2 md:grid-cols-6 gap-32">
           {icons.map((cur, ind) => (
             <ToolkitItem key={ind} image={cur as unknown as MT.ImageProps} />
           ))}

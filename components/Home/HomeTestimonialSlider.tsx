@@ -13,7 +13,7 @@ const HomeTestimonialSlider: React.FC = (): JSX.Element => {
     {
       author: 'Farah A.',
       role: 'Employer, Blind Renaissance',
-      text: 'Matthew was incredible. His communication with us, his work and explanations of what he is doing, everything he completed for us was absolutely fantastic. I would 100% recommend Matthew, and his rates are extremely reasonable too. Really pleasant to work with, work was always completed on time or even before, and he exceeded my expectations! 🙂 Absolutely fantastic work and great guy. We will definitely use Matthew again for any of our web developer needs and again, I highly recommend him!',
+      text: 'Matt was incredible. His communication with us, his work and explanations of what he is doing, everything he completed for us was absolutely fantastic. I would 100% recommend Matt. Really pleasant to work with, work was always completed on time or even before, and he exceeded my expectations! 🙂 Absolutely fantastic work and great guy. We will definitely use Matt again for any of our web developer needs and again, I highly recommend him!',
     },
     {
       author: 'David D.',
@@ -38,7 +38,7 @@ const HomeTestimonialSlider: React.FC = (): JSX.Element => {
     {
       author: 'Tessa E.',
       role: 'Client',
-      text: "Matthew did an exceptional job. He was quick, precise, and gave extra recommendations to help with my business. I highly recommend him if you are looking for a proficient developer.",
+      text: "Matt did an exceptional job. He was quick, precise, and gave extra recommendations to help with my business. I highly recommend him if you are looking for a proficient developer.",
     },
   ];
 
@@ -53,7 +53,7 @@ const HomeTestimonialSlider: React.FC = (): JSX.Element => {
     >
       <Grid>
         <div className="col-start-3 col-span-8">
-          <CarouselSlider els={testimonials} uiColor="green" />
+          <CarouselSlider els={testimonials} isPlaying={true} uiColor="green" />
         </div>
       </Grid>
     </div>

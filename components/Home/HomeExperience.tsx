@@ -80,6 +80,7 @@ const HomeExperience = (): JSX.Element => {
         heading={{
           color: 'text-green',
           level: 'h2',
+          style: 'leading-none',
           text: 'Professional Experience',
         }}
       />
@@ -109,12 +110,11 @@ const ExperienceEntry: React.FC<ExperienceEntryProps> = ({
 }): JSX.Element => {
   return (
     <>
-      <div className="col-start-3 col-span-2">
+      <div className="col-start-3 col-span-2 mb-6 md:mb-0">
         <Heading
           level="h3"
           text={title}
           color="text-green"
-          style="leading-none"
         />
         <Heading level="h4" text={dates} color="text-green" />
       </div>

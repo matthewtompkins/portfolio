@@ -6,13 +6,11 @@ import '@/node_modules/pure-react-carousel/dist/react-carousel.es.css';
 
 interface TestimonialSliderProps {
   els: JSX.Element[];
+  isPlaying?: boolean;
   uiColor: MT.ThemeColors;
 }
 
-const CarouselSlider: React.FC<TestimonialSliderProps> = ({
-  els,
-  uiColor,
-}) => {
+const CarouselSlider: React.FC<TestimonialSliderProps> = ({ els, isPlaying = false, uiColor }) => {
   const elSlides = els.map((cur, ind) => (
     <Slide className="mx-[4px]" index={ind} key={ind}>
       {cur}
@@ -22,6 +20,7 @@ const CarouselSlider: React.FC<TestimonialSliderProps> = ({
   return (
     <div>
       <CarouselProvider
+        isPlaying={isPlaying}
         dragEnabled
         naturalSlideHeight={0}
         naturalSlideWidth={320}
@@ -60,14 +59,8 @@ const CarouselPagination = ({ length, uiColor }: CarouselPaginationProps) => {
     );
   }
   return (
-    <div
-      className="flex w-full justify-center mt-[16px]"
-    >
-      <div
-        className="mx-[2px] self-stretch flex items-center"
-      >
-        {dots}
-      </div>
+    <div className="flex w-full justify-center mt-[16px]">
+      <div className="mx-[2px] self-stretch flex items-center">{dots}</div>
     </div>
   );
 };
