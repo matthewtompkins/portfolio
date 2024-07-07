@@ -10,10 +10,14 @@ interface TestimonialSliderProps {
   uiColor: MT.ThemeColors;
 }
 
-const CarouselSlider: React.FC<TestimonialSliderProps> = ({ els, isPlaying = false, uiColor }) => {
+const CarouselSlider: React.FC<TestimonialSliderProps> = ({
+  els,
+  isPlaying = false,
+  uiColor,
+}) => {
   const elSlides = els.map((cur, ind) => (
-    <Slide className="mx-[4px]" index={ind} key={ind}>
-      {cur}
+    <Slide index={ind} key={ind}>
+      <div className='mx-2'>{cur}</div>
     </Slide>
   ));
 

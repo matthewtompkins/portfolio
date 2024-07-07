@@ -3,7 +3,10 @@ import CarouselSlider from '../Slider/CarouselSlider';
 import Grid from '../Grid/Grid';
 import Heading from '../Typography/Heading';
 import Paragraph from '../Typography/Paragraph';
-import passenger from '@/public/images/passenger.png';
+import passenger from '@/public/images/passenger.jpg';
+import br from '@/public/images/br.jpg';
+import blackArchives from '@/public/images/black-archives.jpg';
+import skBlog from '@/public/images/sk-blog.jpg';
 import Link from 'next/link';
 import RoundedImage from '../Images/RoundedImage';
 import { styleDefaults } from '@/styles/defaults';
@@ -12,9 +15,20 @@ const HomeProjects: React.FC = (): JSX.Element => {
   const projectData: ProjectProps[] = [
     {
       description:
+        'Skillshare is one of the world\'s premiere online learning platforms, specializing in creative skills. The Skillshare blog is a NextJS headless Wordpress application serving as a long-term conversion funnel for the product.',
+      img: {
+        alt: 'Skillshare Blog',
+        src: skBlog as unknown as string,
+      } as MT.ImageProps,
+      link: 'https://www.skillshare.com/en/blog',
+      subtitle: 'Headless Wordpress & NextJS Web Application',
+      title: 'Skillshare Blog',
+    },
+    {
+      description:
         'A Detroit-based support organization aimed at artists in recovery from substance abuse. The Compass application features over 10,000 meeting entries across the US and Europe, and uses AI web crawlers to keep its database up-to-date.',
       img: {
-        alt: 'Passenger',
+        alt: 'Passenger Recovery',
         src: passenger as unknown as string,
       } as MT.ImageProps,
       link: 'https://www.passengerrecovery.com',
@@ -23,25 +37,25 @@ const HomeProjects: React.FC = (): JSX.Element => {
     },
     {
       description:
-        'A Detroit-based support organization aimed at artists in recovery from substance abuse. The Compass application features over 10,000 meeting entries across the US and Europe, and uses AI web crawlers to keep its database up-to-date.',
+        'Blind Renaissance is an experienced, innovative design firm local to the Wenatchee Valley. Founded in 1972, Blind Renaissance has been creating for the Pacific Northwest and the world ever since.',
       img: {
-        alt: 'Passenger',
-        src: passenger as unknown as string,
+        alt: 'Blind Renaissance',
+        src: br as unknown as string,
       } as MT.ImageProps,
-      link: 'https://www.passengerrecovery.com',
-      subtitle: 'Headless Wordpress & NextJS Web Application',
-      title: 'Passenger Recovery',
+      link: 'https://www.icblind.com',
+      subtitle: 'A Custom Wordpress Theme',
+      title: 'Blind Renaissance',
     },
     {
       description:
-        'A Detroit-based support organization aimed at artists in recovery from substance abuse. The Compass application features over 10,000 meeting entries across the US and Europe, and uses AI web crawlers to keep its database up-to-date.',
+        'The mission of the Black Archives of Mid-America in Kansas City, Inc. is to collect, preserve and make available to the public materials documenting the social, economic, political and cultural histories of persons of African American descent in the central United States, with particular emphasis in the Kansas City, Missouri region. This custom Wordpress theme was designed and developed by me.',
       img: {
-        alt: 'Passenger',
-        src: passenger as unknown as string,
+        alt: 'Black Archives of Kansas City',
+        src: blackArchives as unknown as string,
       } as MT.ImageProps,
-      link: 'https://www.passengerrecovery.com',
-      subtitle: 'Headless Wordpress & NextJS Web Application',
-      title: 'Passenger Recovery',
+      link: 'https://www.blackarchives.org',
+      subtitle: 'Custom Wordpress Theme',
+      title: 'Black Archives of Kansas City',
     },
   ];
 
@@ -88,7 +102,7 @@ const Project: React.FC<ProjectProps> = ({
     <Link href={link}>
       <div className="bg-black md:min-h-[500px] p-16 rounded-[8px]">
         <div className="mb-8">
-          <RoundedImage img={img} style='max-w-full' />
+          <RoundedImage img={img} style="max-w-full" />
         </div>
         <Heading level="h3" text={title} color="text-green" />
         <Heading
