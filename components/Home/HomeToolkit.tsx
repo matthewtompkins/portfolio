@@ -23,6 +23,7 @@ import sass from '@/public/images/toolkit/sass.png';
 import tailwind from '@/public/images/toolkit/tailwind.svg';
 import typescript from '@/public/images/toolkit/typescript.png';
 import wordpress from '@/public/images/toolkit/wordpress.png';
+import wpml from '@/public/images/toolkit/wpml.webp';
 
 const HomeToolkit: React.FC = (): JSX.Element => {
   const icons = [
@@ -33,6 +34,7 @@ const HomeToolkit: React.FC = (): JSX.Element => {
     { src: wordpress, alt: 'WordPress' },
     { src: faustjs, alt: 'FaustJS' },
     { src: acf, alt: 'Advanced Custom Fields' },
+    { src: wpml, alt: 'WPML' },
     { src: php, alt: 'PHP' },
     { src: js, alt: 'JavaScript' },
     { src: css3, alt: 'CSS3' },
