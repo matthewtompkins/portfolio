@@ -29,7 +29,9 @@ const config: Config = {
         sm: '1.6rem',
         base: '1.8rem',
         md: '2.8rem',
+        lgMobile: '4rem',
         lg: '5.2rem',
+        xlMobile: '6.4rem',
         xl: '7.2rem',
       },
       maxWidth: {

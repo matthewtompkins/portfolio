@@ -4,6 +4,7 @@ import profile from '@/public/images/llama.jpg';
 import { getSectionThemeColors } from '@/utilities/getSectionThemeColors';
 import RoundedImage from '../Images/RoundedImage';
 import { styleDefaults } from '@/styles/defaults';
+import Heading from '../Typography/Heading';
 
 const HomeHero: React.FC<MT.CallbackProps> = ({ callback }): JSX.Element => {
   const colors = getSectionThemeColors('black');
@@ -13,9 +14,12 @@ const HomeHero: React.FC<MT.CallbackProps> = ({ callback }): JSX.Element => {
         <div
           className={`col-start-3 col-span-5 ${colors.textColor} mb-24 md:mb-0`}
         >
-          <h1 className="font-serif text-xl leading-none mb-8">
-            Matt Tompkins
-          </h1>
+          <Heading
+            color="text-green"
+            style="mb-8 leading-none"
+            level="h1"
+            text="Matt Tompkins"
+          />
           <h2 className="font-serif text-md leading-1 mb-6">
             A people-first web developer specializing&nbsp;in:
           </h2>

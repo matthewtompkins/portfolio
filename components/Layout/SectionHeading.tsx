@@ -8,7 +8,9 @@ interface SectionHeadingProps {
 const SectionHeading: React.FC<SectionHeadingProps> = ({
   heading,
 }): JSX.Element => {
-  heading.style += 'leading-none';
+  heading.style = heading?.style
+    ? heading.style + ' leading-none'
+    : 'leading-none';
   return (
     <Grid>
       <div className="col-start-3 col-span-8 mb-12">

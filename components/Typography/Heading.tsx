@@ -1,6 +1,6 @@
 const sizeClasses = {
-  h1: 'text-xl',
-  h2: 'text-lg',
+  h1: 'text-xlMobile md:text-xl',
+  h2: 'text-lgMobile md:text-lg',
   h3: 'text-md',
   h4: 'text-[2rem]',
 };

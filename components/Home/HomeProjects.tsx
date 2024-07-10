@@ -17,7 +17,7 @@ const HomeProjects: React.FC = (): JSX.Element => {
   const projectData: ProjectProps[] = [
     {
       description:
-        'Skillshare is one of the world\'s premiere online learning platforms, specializing in creative skills. The Skillshare blog is a NextJS headless Wordpress application serving as a long-term conversion funnel for the product.',
+        "Skillshare is one of the world's premiere online learning platforms, specializing in creative skills. The Skillshare blog is a NextJS headless Wordpress application serving as a long-term conversion funnel for the product.",
       img: {
         alt: 'Skillshare Blog',
         src: skBlog as unknown as string,
@@ -45,7 +45,7 @@ const HomeProjects: React.FC = (): JSX.Element => {
         src: br as unknown as string,
       } as MT.ImageProps,
       link: 'https://www.icblind.com',
-      subtitle: 'A Custom Wordpress Theme',
+      subtitle: 'Custom Wordpress Theme',
       title: 'Blind Renaissance',
     },
     {
@@ -56,7 +56,7 @@ const HomeProjects: React.FC = (): JSX.Element => {
         src: cubeworks as unknown as string,
       } as MT.ImageProps,
       link: 'https://www.cubeworks.io',
-      subtitle: 'A Custom Wordpress Theme',
+      subtitle: 'Custom Wordpress Theme',
       title: 'Cubeworks',
     },
     {
@@ -67,18 +67,18 @@ const HomeProjects: React.FC = (): JSX.Element => {
         src: madisonMiles as unknown as string,
       } as MT.ImageProps,
       link: 'https://www.madisonmiles.com',
-      subtitle: 'A Custom Wordpress Theme',
+      subtitle: 'Custom Wordpress Theme',
       title: 'Madison Miles',
     },
     {
       description:
-        'The mission of the Black Archives of Mid-America in Kansas City, Inc. is to collect, preserve and make available to the public materials documenting the social, economic, political and cultural histories of persons of African American descent in the central United States, with particular emphasis in the Kansas City, Missouri region. This custom Wordpress theme was designed and developed by me.',
+        'The Black Archives of Kansas City collects and makes public the histories of Black Americans in the Missouri Region. This custom Wordpress theme was designed and developed by me.',
       img: {
         alt: 'Black Archives of Kansas City',
         src: blackArchives as unknown as string,
       } as MT.ImageProps,
       link: 'https://www.blackarchives.org',
-      subtitle: 'A Custom Wordpress Theme',
+      subtitle: 'Custom Wordpress Theme',
       title: 'Black Archives of Kansas City',
     },
   ];
