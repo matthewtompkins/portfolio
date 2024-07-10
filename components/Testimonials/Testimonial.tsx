@@ -1,9 +1,9 @@
 import Heading from '../Typography/Heading';
 import Paragraph from '../Typography/Paragraph';
 import Image from 'next/image';
-import starGreen from '@/public/images/star-green.svg';
-import starBlack from '@/public/images/star-black.svg';
-import starWhite from '@/public/images/star-white.svg';
+import starGreen from '@/public/images/icons/star-green.svg';
+import starBlack from '@/public/images/icons/star-black.svg';
+import starWhite from '@/public/images/icons/star-white.svg';
 
 interface TestimonialProps {
   color: MT.TextColorClasses;
