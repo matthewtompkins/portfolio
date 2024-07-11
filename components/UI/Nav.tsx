@@ -9,14 +9,14 @@ const Nav: React.FC<MT.CallbackProps> = ({ callback }): JSX.Element => {
     <>
       <div className="md:hidden bg-green py-4 text-center">
         <Grid>
-          <button onClick={callback} className="text-black text-base">
+          <button onClick={callback} className="text-black text-base font-serif">
             let&apos;s work together
           </button>
         </Grid>
       </div>
-      <nav className="w-full bg-black pt-12 md:py-12">
+      <nav className="w-full bg-black pt-6 md:py-12">
         <Grid>
-          <ul className="inline-flex col-start-3 col-end-11 justify-end items-center">
+          <ul className="flex md:inline-flex col-start-3 col-end-11 justify-center md:justify-end items-center">
             <li key="nav-0" className={navLinkStyles}>
               <a href="#about" aria-label="Go to about me section">
                 About Me
