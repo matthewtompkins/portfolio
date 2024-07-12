@@ -16,7 +16,7 @@ const Nav: React.FC<MT.CallbackProps> = ({ callback }): JSX.Element => {
       </div>
       <nav className="w-full bg-black pt-6 md:py-12">
         <Grid>
-          <ul className="flex md:inline-flex col-start-3 col-end-11 justify-center md:justify-end items-center">
+          <ul className="flex md:inline-flex col-start-3 col-end-12 justify-center md:justify-end items-center">
             <li key="nav-0" className={navLinkStyles}>
               <a href="#about" aria-label="Go to about me section">
                 About Me
