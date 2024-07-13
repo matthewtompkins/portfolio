@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { DM_Serif_Display, Poppins } from 'next/font/google';
 import './globals.css';
 
-import llama from '../public/llama.jpg';
+import llama from '@/public/images/llama.jpg';
 
 const dm_serif_display = DM_Serif_Display({
   subsets: ['latin'],
