@@ -3,9 +3,9 @@ import Grid from '../Grid/Grid';
 
 const HomeTestimonial: React.FC = (): JSX.Element => {
   const testimonialData: MT.TestimonialProps = {
-    author: 'Mindy P.',
-    role: 'Client',
-    text: "Matt is a rare talent. He is professional, accessible, prompt, and absolutely gifted at his craft. But he's also so much more. His every interaction and fulfillment went beyond money and beyond pride in his workmanship, he was fully committed to the success of the project and it came through in every aspect, including the final product. Many freelancers may submit proposals for a job, but you'll be fortunate if you choose to have him on your team.",
+    author: 'Zach Bridges',
+    role: 'Senior Software Engineer, Skillshare',
+    text: "Matt Tompkins was one of my favorite peers while we worked together at Skillshare. My favorite feature of Matt is that he is a full-time student, always learning new things and digging deeper where he feels there's room for improvement. In practice, Matt works with the high bar of a professional, always seeking feedback and refusing to ship anything doesn't meet his high expectations. Matt\'s reputation with me is that \"good enough\" will not cut it with him.",
   };
   return (
     <div className="py-24 md:py-32 bg-white">

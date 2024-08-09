@@ -11,6 +11,16 @@ const HomeTestimonialSlider: React.FC = (): JSX.Element => {
       text: "It's great working with Matt. He's a fast and organized developer. He's built me many WordPress sites from the ground up now and I plan on sending him as much as I can!  He's an excellent person to work with. Look no further, this is your guy if you need a WP/PHP developer.",
     },
     {
+      author: 'Carla Rucian',
+      role: 'SEO Manager, Skillshare',
+      text: "I've had the pleasure of working with Matt for the past two and a half years, and I can confidently say that he is one of the most talented and dedicated engineers I've ever encountered. His expertise in Next.js is unmatched, and I've witnessed him tackle complex and challenging problems with a level of skill and perseverance that's truly inspiring... Beyond his technical abilities, Matt brings an infectious energy and wit to the team. He's the kind of person who makes work not only productive but enjoyable. His positive attitude, sense of humour, and willingness to help others make him an invaluable team member and a great person to be around.",
+    },
+    {
+      author: 'Mindy P.',
+      role: 'Client',
+      text: "Matt is a rare talent. He is professional, accessible, prompt, and absolutely gifted at his craft. But he's also so much more. His every interaction and fulfillment went beyond money and beyond pride in his workmanship, he was fully committed to the success of the project and it came through in every aspect, including the final product. Many freelancers may submit proposals for a job, but you'll be fortunate if you choose to have him on your team.",
+    },
+    {
       author: 'Farah A.',
       role: 'Employer, Blind Renaissance',
       text: 'Matt was incredible. His communication with us, his work and explanations of what he is doing, everything he completed for us was absolutely fantastic. I would 100% recommend Matt. Really pleasant to work with, work was always completed on time or even before, and he exceeded my expectations! 🙂 Absolutely fantastic work and great guy. We will definitely use Matt again for any of our web developer needs and again, I highly recommend him!',
