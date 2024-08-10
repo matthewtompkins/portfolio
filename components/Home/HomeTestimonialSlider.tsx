@@ -36,19 +36,9 @@ const HomeTestimonialSlider: React.FC = (): JSX.Element => {
       text: 'Matt was FANTASTIC! Very fast to complete the work, respond to emails, and the quality was amazing. I would look no further and hire him again in a heartbeat. Great customer service and I could tell he truly cared about my project and the end result. Thanks again Matt!',
     },
     {
-      author: 'Wendy R.',
-      role: 'Client',
-      text: 'What a STAR! Great communicator. Thank you! I highly recommend to anyone. Will be working with him again!',
-    },
-    {
       author: 'Marianna R.',
       role: 'Client',
-      text: 'Matt was great. He set out a great plan from the beginning and executed it perfectly. He was extremely responsive and finished the site before I could provide him copy. He also sent me a tutorial on how to edit the site myself. I’d give him 10 stars if I could. Consider this my highest recommendation.',
-    },
-    {
-      author: 'Tessa E.',
-      role: 'Client',
-      text: "Matt did an exceptional job. He was quick, precise, and gave extra recommendations to help with my business. I highly recommend him if you are looking for a proficient developer.",
+      text: 'Matt was great. He set out a great plan from the beginning and executed it perfectly. He was extremely responsive and finished the site before I could provide him copy. He also sent me a tutorial on how to edit the site myself. I\'d give him 10 stars if I could. Consider this my highest recommendation.',
     },
   ];
 
