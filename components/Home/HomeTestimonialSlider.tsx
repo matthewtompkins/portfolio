@@ -73,7 +73,7 @@ const HomeTestimonialSlider: React.FC = (): JSX.Element => {
     >
       <Grid>
         <div className="col-start-3 col-span-8">
-          <CarouselSlider els={testimonials} isPlaying={true} uiColor="green" />
+          <CarouselSlider els={testimonials} uiColor="green" />
         </div>
       </Grid>
     </div>
