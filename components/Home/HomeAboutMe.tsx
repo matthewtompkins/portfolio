@@ -19,7 +19,7 @@ const HomeAboutMe: React.FC = (): JSX.Element => {
       paragraph: {
         color: colors.textColor,
         html: true,
-        text: "As opposed to providing a technical overview of the work I've done that's gotten me here (there is more on that below), I'd rather give a more holistic view of my life and how it has informed the work I do now.</br></br>I spent the first 10 years of my professional life working in restaurants as a wine specialist, a bartender and a server. This work was invaluable to me in that it shaped the way I presented myself in the workplace, and helped me to understand how crucial soft skills are to any job. I had to understand how to manage the expectations of my guests while also approaching my job with competence and knowledge. It's just dinner, but it's kind of not. It's about providing a sense of comfort to new acquaintences in an environment that can at times be quite chaotic.",
+        text: "As opposed to providing a technical overview of the work I've done that's gotten me here (there is more on that below), I'd rather give a more holistic view of my life and how it has informed the work I do now.</br></br>I spent the first 10 years of my professional life working in restaurants as a wine specialist, a bartender and a server. This work was invaluable to me in that it shaped the way I presented myself in the workplace, and helped me to understand how crucial soft skills are to any job. I had to understand how to manage the expectations of my guests while also approaching my job with competence and knowledge. It's just dinner, but it's kind of not. It's about providing a sense of comfort to new acquaintances in an environment that can at times be quite chaotic.",
       } as MT.ParagraphProps,
     },
     {
