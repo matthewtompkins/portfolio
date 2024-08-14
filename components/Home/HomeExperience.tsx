@@ -21,7 +21,7 @@ const HomeExperience = (): JSX.Element => {
         'Google Analytics',
         'Google Tag Manager',
       ],
-      text: "I was originally brought onto the Skillshare team as a contractor. Their blog was starting to get a lot of traffic, and they asked me to help internationalize it and prepare it for experimentation. I implemented an i18n configuration using WPML, and eventually migrated the blog to a decoupled headless configuration using NextJS as the frontend application.<br/><br/>After a few months, I was hired a full-time position. I joined the Growth team, responsible for organic growth and experimentation, and have since branched out to work on our checkout, third-party tooling and Google Tag Manager implementation. It's been an incredible period of growth for me, and I'm fortunate to work with an amazing group of incredibly talented individuals.",
+      text: "I was originally brought onto the Skillshare team as a contractor. Their blog was starting to get a lot of traffic, and they asked me to help internationalize it and prepare it for experimentation. I implemented an i18n configuration using WPML, and eventually migrated the blog to a decoupled headless configuration using NextJS as the frontend application.<br/><br/>After a few months, I was hired a full-time position. I joined the Growth team, responsible for organic growth and experimentation, and have eventually branched out to work on our checkout, third-party tooling and Google Tag Manager implementation. It was an incredible period of growth for me, and I'm fortunate to have worked with an amazing group of incredibly talented individuals.",
       title: 'Skillshare',
     },
     {
