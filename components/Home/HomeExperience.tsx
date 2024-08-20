@@ -144,7 +144,7 @@ const ExperienceEntry: React.FC<ExperienceEntryProps> = ({
       </div>
       <div className="col-start-6 col-span-5 mb-12">
         <Paragraph html={true} text={text} color="text-green" />
-        <div className="flex flex-wrap mt-8 ml-[-4px]">
+        {/* <div className="flex flex-wrap mt-8 ml-[-4px]">
           {skills.map((cur, ind) => {
             return (
               <span
@@ -155,7 +155,7 @@ const ExperienceEntry: React.FC<ExperienceEntryProps> = ({
               </span>
             );
           })}
-        </div>
+        </div> */}
       </div>
     </>
   );
