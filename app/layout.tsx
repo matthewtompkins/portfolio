@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { DM_Serif_Display, Poppins } from 'next/font/google';
+import { DM_Serif_Display, DM_Sans } from 'next/font/google';
 import './globals.css';
 
 import llama from '@/public/images/llama.jpg';
@@ -9,7 +9,7 @@ const dm_serif_display = DM_Serif_Display({
   variable: '--font-dm-serif-display',
   weight: '400',
 });
-const poppins = Poppins({
+const poppins = DM_Sans({
   subsets: ['latin'],
   variable: '--font-poppins',
   weight: '400',
