@@ -10,7 +10,7 @@ const RoundedImage: React.FC<RoundedImageProps> = ({
   style = '',
 }): JSX.Element => {
   return (
-    <div className={`overflow-hidden rounded-lg max-w-[320px] mx-auto ${style}`}>
+    <div className={`overflow-hidden rounded-full max-w-[320px] mx-auto ${style}`}>
       <Image {...img} />
     </div>
   );

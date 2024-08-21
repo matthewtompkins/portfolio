@@ -3,7 +3,7 @@ import SectionHeading from '../Layout/SectionHeading';
 import TextAndImage from '../Layout/TextAndImage';
 import placeholder from '@/public/images/placeholder.jpg';
 import mancho from '@/public/images/mancho.jpg';
-import wine from '@/public/images/wine.jpg';
+import llama from '@/public/images/llama.jpg';
 import music from '@/public/images/music.jpg';
 import { styleDefaults } from '@/styles/defaults';
 
@@ -12,8 +12,8 @@ const HomeAboutMe: React.FC = (): JSX.Element => {
   const textAndImageData = [
     {
       img: {
-        src: wine as unknown as string,
-        alt: 'Me snobbishly tasting wine.',
+        src: llama as unknown as string,
+        alt: 'Me with a llama.',
         position: 'right',
       } as MT.ImageProps,
       paragraph: {
