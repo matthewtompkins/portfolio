@@ -28,7 +28,8 @@ declare namespace MT {
 
   export interface TestimonialProps {
     author: string;
-    role: string;
+    relationship: string;
+    role?: string;
     text: string;
   }
 

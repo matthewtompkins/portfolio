@@ -4,19 +4,19 @@ import Button from '../UI/Button';
 
 const HomeCTA: React.FC<MT.CallbackProps> = ({ callback }): JSX.Element => {
   return (
-    <div className="bg-black pb-24 md:pb-48">
+    <div className="bg-white p-24 md:p-48">
       <Grid>
         <div className="col-start-3 col-span-8">
           <div className="mb-6">
             <Heading
-              color="text-green"
+              color="text-black"
               level="h2"
               text="Let's work together."
               style="leading-none"
             />
           </div>
           <Heading
-            color="text-green"
+            color="text-black"
             level="h3"
             fontStyle="font-sans"
             html={true}
@@ -24,6 +24,7 @@ const HomeCTA: React.FC<MT.CallbackProps> = ({ callback }): JSX.Element => {
           />
           <div className="mt-16">
             <Button
+              color="black"
               onClick={callback}
               theme="outline"
               title="Let's work together"
