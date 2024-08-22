@@ -24,7 +24,8 @@ const Testimonial: React.FC<TestimonialProps> = ({
         />
         {testimonial.role && <Heading
           color={color}
-          level="h3"
+          level="h4"
+          fontStyle='font-sans'
           text={`${testimonial.role}`}
         />}
       </div>

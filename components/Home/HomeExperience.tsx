@@ -72,8 +72,8 @@ const ExperienceEntry: React.FC<ExperienceEntryProps> = ({
   return (
     <>
       <div className="col-start-3 col-span-3 mb-6 md:mb-0">
-        <Heading level="h3" text={title} color="text-black" />
-        <Heading level="h4" style='font-sans' text={dates} color="text-black" />
+        <Heading level="h3" fontStyle="font-sans" text={title} color="text-black" />
+        <Heading level="h4" fontStyle='font-sans' text={dates} color="text-black" />
       </div>
       <div className="col-start-6 col-span-5 mb-12">
         <Paragraph html={true} text={text} color="text-black" />
