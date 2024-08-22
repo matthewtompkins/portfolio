@@ -31,7 +31,7 @@ const HomeSkills: React.FC = (): JSX.Element => {
             <Heading level="h2" text="Skills" color="text-black" />
             <ul className='mt-4'>
               {skills.map((skill, index) => (
-                <li className='text-base flex gap-2 [&:not(:last-child)]:mb-2' key={index}><Image alt="" src={arrow} height={16} width={16} />{skill}</li>
+                <li className='text-sm md:text-md flex gap-2 [&:not(:last-child)]:mb-2' key={index}><Image alt="" src={arrow} height={16} width={16} />{skill}</li>
               ))}
             </ul>
           </div>
@@ -39,7 +39,7 @@ const HomeSkills: React.FC = (): JSX.Element => {
             <Heading level="h2" text="Tools" color="text-black" />
             <ul className='mt-4'>
               {tools.map((tool, index) => (
-                <li className='text-base flex gap-2 [&:not(:last-child)]:mb-2' key={index}><Image alt="" className='mr-2' src={arrow} height={16} width={16} />{tool}</li>
+                <li className='text-sm md:text-md flex gap-2 [&:not(:last-child)]:mb-2' key={index}><Image alt="" className='mr-2' src={arrow} height={16} width={16} />{tool}</li>
               ))}
             </ul>
           </div>
