@@ -1,7 +1,6 @@
 import { getSectionThemeColors } from '@/utilities/getSectionThemeColors';
 import SectionHeading from '../Layout/SectionHeading';
 import TextAndImage from '../Layout/TextAndImage';
-import placeholder from '@/public/images/placeholder.jpg';
 import mancho from '@/public/images/mancho.jpg';
 import llama from '@/public/images/llama.jpg';
 import music from '@/public/images/music.jpg';
@@ -14,6 +13,10 @@ const HomeAboutMe: React.FC = (): JSX.Element => {
       img: {
         src: llama as unknown as string,
         alt: 'Me with a llama.',
+        caption: {
+          text: 'Me with a llama.',
+          color: colors.textColor,
+        },
         position: 'right',
       } as MT.ImageProps,
       paragraph: {
@@ -25,7 +28,11 @@ const HomeAboutMe: React.FC = (): JSX.Element => {
     {
       img: {
         src: music as unknown as string,
-        alt: 'Me being a rockstar.',
+        alt: 'Me being a rocker.',
+        caption: {
+          text: 'Me being a rocker.',
+          color: colors.textColor,
+        },
         position: 'left',
       } as MT.ImageProps,
       paragraph: {
@@ -38,6 +45,10 @@ const HomeAboutMe: React.FC = (): JSX.Element => {
       img: {
         src: mancho as unknown as string,
         alt: 'Mancho and me on a hike (with Julia).',
+        caption:{
+          text: 'Mancho and me on a hike (with Julia).',
+          color: colors.textColor
+        },
         position: 'right',
       } as MT.ImageProps,
       paragraph: {

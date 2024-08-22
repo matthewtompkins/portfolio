@@ -24,6 +24,10 @@ declare namespace MT {
     src: string;
     alt: string;
     position?: 'left' | 'right';
+    caption?: {
+      text: string;
+      color: TextColorClasses;
+    };
   }
 
   export interface TestimonialProps {
