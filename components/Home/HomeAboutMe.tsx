@@ -44,9 +44,9 @@ const HomeAboutMe: React.FC = (): JSX.Element => {
     {
       img: {
         src: mancho ,
-        alt: 'Mancho and I on a hike (with Julia).',
+        alt: 'Mancho and me on a hike (with Julia).',
         caption:{
-          text: 'Mancho and I on a hike (with Julia).',
+          text: 'Mancho and me on a hike (with Julia).',
           color: colors.textColor
         },
         position: 'right',
