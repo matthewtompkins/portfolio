@@ -1,9 +1,10 @@
 const Paragraph: React.FC<MT.ParagraphProps> = ({
   color,
   html = false,
+  style = '',
   text,
 }): JSX.Element => {
-  const styles = `${color} text-base font-sans`;
+  const styles = `${color} text-base font-sans ${style ? style : ''}`;
   return (
     <>
       {html ? (

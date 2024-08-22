@@ -16,6 +16,7 @@ const RoundedImage: React.FC<RoundedImageProps> = ({
       <Image {...imgWithoutCaption} />
       {caption && <Paragraph
         color={caption.color}
+        style="text-sm text-center mt-2"
         text={caption.text} />}
     </div>
   );

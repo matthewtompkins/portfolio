@@ -17,6 +17,7 @@ declare namespace MT {
   export interface ParagraphProps {
     color: TextColorClasses;
     html?: boolean;
+    style?: string;
     text: string;
   }
 
