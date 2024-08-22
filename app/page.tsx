@@ -9,7 +9,7 @@ import HomeTestimonial from '@/components/Home/HomeTestimonial';
 import HomeTestimonialSlider from '@/components/Home/HomeTestimonialSlider';
 import HomeExperience from '@/components/Home/HomeExperience';
 import HomeProjects from '@/components/Home/HomeProjects';
-import HomeToolkit from '@/components/Home/HomeToolkit';
+import HomeSkills from '@/components/Home/HomeSkills';
 import HomeCTA from '@/components/Home/HomeCTA';
 import Footer from '@/components/UI/Footer';
 import ContactOverlay from '@/components/UI/ContactOverlay';
@@ -32,7 +32,7 @@ const Home = () => {
       <HomeAboutMe />
       <HomeExperience />
       <HomeProjects />
-      <HomeToolkit />
+      <HomeSkills />
       <HomeTestimonialSlider />
       <HomeCTA callback={handleContact} />
       <Footer />

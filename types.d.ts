@@ -22,7 +22,7 @@ declare namespace MT {
   }
 
   export interface ImageProps {
-    src: string;
+    src: StaticImageData;
     alt: string;
     position?: 'left' | 'right';
     caption?: {

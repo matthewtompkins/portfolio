@@ -9,7 +9,7 @@ const Nav: React.FC<MT.CallbackProps> = ({ callback }): JSX.Element => {
     <>
       <div className="md:hidden bg-green py-4 text-center">
         <Grid>
-          <button onClick={callback} className="text-black text-base font-serif">
+          <button onClick={callback} className="text-black text-base font-sans">
             let&apos;s work together
           </button>
         </Grid>

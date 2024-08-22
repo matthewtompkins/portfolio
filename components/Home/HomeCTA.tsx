@@ -1,10 +1,11 @@
 import Heading from '../Typography/Heading';
 import Grid from '../Grid/Grid';
 import Button from '../UI/Button';
+import { styleDefaults } from '@/styles/defaults';
 
 const HomeCTA: React.FC<MT.CallbackProps> = ({ callback }): JSX.Element => {
   return (
-    <div className="bg-white p-24 md:p-48">
+    <div className={`bg-white ${styleDefaults.sectionPadding}`}>
       <Grid>
         <div className="col-start-3 col-span-8">
           <div className="mb-6">
@@ -27,7 +28,7 @@ const HomeCTA: React.FC<MT.CallbackProps> = ({ callback }): JSX.Element => {
               color="black"
               onClick={callback}
               theme="outline"
-              title="Let's work together"
+              title="Email me"
             />
           </div>
         </div>

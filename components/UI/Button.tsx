@@ -26,7 +26,7 @@ const Button: React.FC<ButtonProps> = ({
   title,
   url,
 }): JSX.Element => {
-  const btnClass = `py-3 px-12 rounded-lg font-serif text-sm tracking-wide lowercase ${themes[theme][color]}`;
+  const btnClass = `py-3 px-12 rounded-lg font-sans text-sm tracking-wide lowercase ${themes[theme][color]}`;
   if (url) {
     return (
       <Link href={url}>

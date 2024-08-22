@@ -11,7 +11,7 @@ const HomeAboutMe: React.FC = (): JSX.Element => {
   const textAndImageData = [
     {
       img: {
-        src: llama as unknown as string,
+        src: llama ,
         alt: 'Me with a llama.',
         caption: {
           text: 'Me with a llama.',
@@ -27,7 +27,7 @@ const HomeAboutMe: React.FC = (): JSX.Element => {
     },
     {
       img: {
-        src: music as unknown as string,
+        src: music ,
         alt: 'Me being a rocker.',
         caption: {
           text: 'Me being a rocker.',
@@ -43,7 +43,7 @@ const HomeAboutMe: React.FC = (): JSX.Element => {
     },
     {
       img: {
-        src: mancho as unknown as string,
+        src: mancho ,
         alt: 'Mancho and I on a hike (with Julia).',
         caption:{
           text: 'Mancho and I on a hike (with Julia).',

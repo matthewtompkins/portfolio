@@ -20,13 +20,13 @@ const HomeHero: React.FC<MT.CallbackProps> = ({ callback }): JSX.Element => {
             level="h1"
             text="Matt Tompkins"
           />
-          <h2 className="font-serif text-md leading-1 mb-6">
+          <h2 className="font-sans text-md leading-1 mb-6">
             Frontend developer with 8+ years experience and a focus on soft skills and communication. Specializing in:
           </h2>
           <ul className="text-base [&>li:not(:last-child)]:mb-2 mb-10">
             <li key="0">React & NextJS Development</li>
-            <li key="1">Custom Wordpress Themes&nbsp;&&nbsp;Plugins</li>
-            <li key="2">Headless Wordpress Development</li>
+            <li key="1">Headless Wordpress Development</li>
+            <li key="2">Custom Wordpress Themes&nbsp;&&nbsp;Plugins</li>
           </ul>
           <Button
             theme="outline"
@@ -37,7 +37,7 @@ const HomeHero: React.FC<MT.CallbackProps> = ({ callback }): JSX.Element => {
         <div className="col-span-3 col-start-8">
           <RoundedImage
             img={{
-              src: profile as unknown as string,
+              src: profile,
               alt: 'Matt Tompkins profile picture',
             }}
           />
