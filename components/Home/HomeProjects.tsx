@@ -17,24 +17,24 @@ const HomeProjects: React.FC = (): JSX.Element => {
   const projectData: ProjectProps[] = [
     {
       description:
-        "Skillshare is one of the world's premiere online learning platforms, specializing in creative skills. The Skillshare blog is a NextJS headless Wordpress application serving as a long-term conversion funnel for the product.",
+        "Skillshare is one of the world's premiere online learning platforms, specializing in creative skills. The Skillshare blog is a Next.js headless Wordpress application serving as a long-term conversion funnel for the product.",
       img: {
         alt: 'Skillshare Blog',
         src: skBlog ,
       } as MT.ImageProps,
       link: 'https://www.skillshare.com/en/blog',
-      subtitle: 'Headless Wordpress & NextJS Web Application',
+      subtitle: 'Headless Wordpress & Next.js Web Application',
       title: 'Skillshare Blog',
     },
     {
       description:
-        'A Detroit-based support organization aimed at artists in recovery from substance abuse. The Compass application features over 10,000 meeting entries across the US and Europe, and uses AI web crawlers to keep its database up-to-date.',
+        'A Detroit-based support organization aimed at artists in recovery from substance abuse. The Compass application features over 17,000 meeting entries across the US and Europe, and uses AI web crawlers to keep its database up-to-date.',
       img: {
         alt: 'Passenger Recovery',
         src: passenger ,
       } as MT.ImageProps,
       link: 'https://www.passengerrecovery.com',
-      subtitle: 'Headless Wordpress & NextJS Web Application',
+      subtitle: 'Headless Wordpress & Next.js Web Application',
       title: 'Passenger Recovery',
     },
     {
@@ -69,18 +69,7 @@ const HomeProjects: React.FC = (): JSX.Element => {
       link: 'https://www.madisonmiles.com',
       subtitle: 'Custom Wordpress Theme',
       title: 'Madison Miles',
-    },
-    {
-      description:
-        'The Black Archives of Kansas City collects and makes public the histories of Black Americans in the Missouri Region. This custom Wordpress theme was designed and developed by me.',
-      img: {
-        alt: 'Black Archives of Kansas City',
-        src: blackArchives ,
-      } as MT.ImageProps,
-      link: 'https://www.blackarchives.org',
-      subtitle: 'Custom Wordpress Theme',
-      title: 'Black Archives of Kansas City',
-    },
+    }
   ];
 
   const projects = projectData.map((project, ind) => (

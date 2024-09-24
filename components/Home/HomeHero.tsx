@@ -21,10 +21,10 @@ const HomeHero: React.FC<MT.CallbackProps> = ({ callback }): JSX.Element => {
             text="Matt Tompkins"
           />
           <h2 className="font-sans text-md leading-1 mb-6">
-            Frontend developer with 8+ years experience and a focus on soft skills and communication specializing in:
+            Frontend developer with 7 years experience and a focus on soft skills and communication specializing in:
           </h2>
           <ul className="text-base [&>li:not(:last-child)]:mb-2 mb-10">
-            <li key="0">React & NextJS Development</li>
+            <li key="0">React & Next.js Development</li>
             <li key="1">Headless Wordpress Development</li>
             <li key="2">Custom Wordpress Themes&nbsp;&&nbsp;Plugins</li>
           </ul>

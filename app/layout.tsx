@@ -18,7 +18,7 @@ const poppins = DM_Sans({
 export const metadata: Metadata = {
   title: 'Matt Tompkins, Frontend Web Developer',
   description:
-    'A people-first web developer specializing in: Custom Wordpress Themes & Plugins | Headless Wordpress Development | React & NextJS Development',
+    'A people-first web developer specializing in: React & Next.js Development | Headless Wordpress Development | Custom Wordpress Themes & Plugins',
   openGraph: {
     type: 'website',
     locale: 'en_US',
