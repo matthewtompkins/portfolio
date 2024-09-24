@@ -33,8 +33,8 @@ const HomeProjects: React.FC = (): JSX.Element => {
         alt: 'Passenger Recovery',
         src: passenger ,
       } as MT.ImageProps,
-      link: 'https://www.passengerrecovery.com',
-      subtitle: 'Headless Wordpress & Next.js Web Application',
+      link: 'https://passenger--passenger-react-10896.us-central1.hosted.app',
+      subtitle: 'Headless Wordpress & Next.js Web Application (In Progress)',
       title: 'Passenger Recovery',
     },
     {
