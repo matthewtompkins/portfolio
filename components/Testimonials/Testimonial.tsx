@@ -14,7 +14,7 @@ const Testimonial: React.FC<TestimonialProps> = ({
   return (
     <>
       <div className="mb-8">
-        <Paragraph color={color} text={`"${testimonial.text}"`} />
+        <Paragraph color={color} html text={`"${testimonial.text}"`} />
       </div>
       <div className="text-right">
         <Heading
