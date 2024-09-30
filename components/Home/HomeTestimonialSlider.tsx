@@ -12,6 +12,12 @@ const HomeTestimonialSlider: React.FC = (): JSX.Element => {
       text: 'I highly recommend Matt for any engineering role! He is a strong engineer, produces beautiful work, and most importantly is warm, thoughtful, and always striving to improve. The level of self awareness Matt has is rare, and I deeply appreciate his ability to proactively check in as projects progress to see how things are going and what could improve. He is a strong communicator, and his clear and frequent updates on complex technical concepts are greatly appreciated amongst cross functional stakeholders, ranging from Marketing to Data. Matt brings a level of connection, heart, and wit that will make any team greater and I look forward to seeing what he does next!',
     },
     {
+      author: 'Samer Hobeika',
+      relationship: 'Manager',
+      role: 'Software Engineering Manager',
+      text: 'It was a pleasure to work with and mentor Matt during my time as Engineering Manager. He consistently tackled complex engineering challenges head-on and showed significant growth in his problem-solving approach. His versatility across different parts of our codebase, from WordPress to React and Next.js, was impressive, and his dedication to improving our documentation made a lasting impact on the team. We used to call him SuperMatt!<br/><br/>On a personal level, I really valued my 1:1s with Matt. Our conversations were always engaging, and we both came away from each meeting having learned something new about each other. Matt\'s technical skills, combined with his openness to feedback and strong interpersonal connection, make him a fantastic asset to any team.',
+    },
+    {
       author: 'Miguel Useche',
       relationship: 'Coworker',
       role: 'Senior Staff Engineer',

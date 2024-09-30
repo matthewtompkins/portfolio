@@ -5,7 +5,6 @@ import Heading from '../Typography/Heading';
 import Paragraph from '../Typography/Paragraph';
 import passenger from '@/public/images/projects/passenger.jpg';
 import br from '@/public/images/projects/br.jpg';
-import blackArchives from '@/public/images/projects/black-archives.jpg';
 import skBlog from '@/public/images/projects/sk-blog.jpg';
 import cubeworks from '@/public/images/projects/cubeworks.jpg';
 import madisonMiles from '@/public/images/projects/madison-miles.jpg';
