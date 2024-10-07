@@ -9,12 +9,12 @@ const HomeExperience = (): JSX.Element => {
     {
       dates: 'November 2021 - August 2024',
       text: "While at Skillshare, I built their headless blog service from the ground up using Next.js/Typescript and WPGraphQL. I later oversaw and contributed to a full redesign of the blog, which launched in Q2 of 2024. I was a member of the Growth Pod, which was responsible for experimentation, organic growth and checkout. My additional contributions included leading several conversion-focused experiments and significant work on Google Tag Manager and related third-party integrations. During my time at Skillshare I also worked with PHP, Datadog, Mixpanel and Split.io.",
-      title: 'Software Engineer, Skillshare',
+      title: 'Software Developer, Skillshare',
     },
     {
       dates: '2016 - Present',
       text: 'Passenger Recovery is a support service that provides access to AA and NA meetings for individuals in recovery while they travel. The Passenger Compass is a meeting finder web application featuring over 14,000 meetings. It is built on Google Maps and deployed/hosted through Firebase, and was one of the first things I ever built as a coder. I am slating a release of a full rebuild of Compass for Q3 of 2024. The new version is built on Next.js and Typescript, expands its use of Firebase and Google Cloud Service tools and will also feature headless Wordpress functionality. Later this year I will begin developing a Node.js-based crawler service to keep our meeting database up-to-date over time.',
-      title: 'Senior Software Engineer, Passenger Recovery',
+      title: 'Senior Software Developer, Passenger Recovery',
     },
     {
       dates: '2016 - Present',
