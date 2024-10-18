@@ -16,7 +16,7 @@ import ContactOverlay from '@/components/UI/ContactOverlay';
 
 const Home = () => {
   const [showContact, setShowContact] = useState(false);
-  const mainRef = useRef<HTMLMainElement>(null);
+  const mainRef = useRef<HTMLElement>(null);
 
   const handleContact = () => {
     setShowContact(!showContact);
