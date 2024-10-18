@@ -21,7 +21,7 @@ const HomeTestimonialSlider: React.FC = (): JSX.Element => {
       author: 'Aaron Taylor',
       relationship: 'Manager',
       role: 'Software Engineering Manager',
-      text: "Matt is a wonderful coworker and skilled software engineer. I had the honor to be his manager, during which time he led a multidisciplinary team to launch a headless blog. Matt is just one of the people who makes the job of everyone he works with easier and more fun. He always stood out for his communication, curiosity, and conscientiousness (accidental alliteration). He's not your typical software engineer; he's one of those people who would do great in any role."    },
+      text: "Matt is a wonderful coworker and skilled software engineer. I had the honor to be his manager, during which time he led a multidisciplinary team to launch a headless blog. Matt is just one of the people who makes the job of everyone he works with easier and more fun. He always stood out for his communication, curiosity, and conscientiousness (accidental alliteration). He's not your typical software engineer; he's one of those people who would do great in any role."},
     {
       author: 'Miguel Useche',
       relationship: 'Coworker',

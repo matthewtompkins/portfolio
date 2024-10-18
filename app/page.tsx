@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 
 import Nav from '@/components/UI/Nav';
 import HomeHero from '@/components/Home/HomeHero';
@@ -16,16 +16,25 @@ import ContactOverlay from '@/components/UI/ContactOverlay';
 
 const Home = () => {
   const [showContact, setShowContact] = useState(false);
+  const mainRef = useRef<HTMLMainElement>(null);
 
   const handleContact = () => {
     setShowContact(!showContact);
   };
 
+  useEffect(() => {
+    if (showContact) {
+      mainRef.current?.setAttribute('inert', 'true');
+    } else {
+      mainRef.current?.removeAttribute('inert');
+    }
+  }, [showContact]);
+
   const contactStyle = showContact ? 'overflow-hidden h-screen' : '';
 
   return (
-    <main className={`${contactStyle}`}>
-      {showContact && <ContactOverlay callback={handleContact} />}
+    <>
+    <main className={`${contactStyle}`} ref={mainRef}>
       <Nav callback={handleContact} />
       <HomeHero callback={handleContact} />
       <HomeTestimonial />
@@ -37,6 +46,8 @@ const Home = () => {
       <HomeCTA callback={handleContact} />
       <Footer />
     </main>
+    {showContact && <ContactOverlay callback={handleContact} />}
+    </>
   );
 };
 
